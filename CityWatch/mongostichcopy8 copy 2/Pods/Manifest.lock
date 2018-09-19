@@ -1,0 +1,49 @@
+PODS:
+  - StitchAWSService (4.0.5):
+    - StitchCore (~> 4.0.5)
+    - StitchCoreAWSService (~> 4.0.5)
+  - StitchCore (4.0.5):
+    - StitchCoreSDK (~> 4.0.5)
+  - StitchCoreAWSService (4.0.5):
+    - StitchCoreSDK (~> 4.0.5)
+  - StitchCoreRemoteMongoDBService (4.0.5):
+    - StitchCoreSDK (~> 4.0.5)
+  - StitchCoreSDK (4.0.5)
+  - StitchRemoteMongoDBService (4.0.5):
+    - StitchCore (~> 4.0.5)
+    - StitchCoreRemoteMongoDBService (~> 4.0.5)
+  - StitchSDK (4.0.5):
+    - StitchSDK/StitchSDK (= 4.0.5)
+  - StitchSDK/StitchAWSService (4.0.5):
+    - StitchAWSService (~> 4.0.5)
+  - StitchSDK/StitchRemoteMongoDBService (4.0.5):
+    - StitchRemoteMongoDBService (~> 4.0.5)
+  - StitchSDK/StitchSDK (4.0.5):
+    - StitchSDK/StitchRemoteMongoDBService
+
+DEPENDENCIES:
+  - StitchSDK (~> 4.0.1)
+  - StitchSDK/StitchAWSService (~> 4.0.5)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - StitchAWSService
+    - StitchCore
+    - StitchCoreAWSService
+    - StitchCoreRemoteMongoDBService
+    - StitchCoreSDK
+    - StitchRemoteMongoDBService
+    - StitchSDK
+
+SPEC CHECKSUMS:
+  StitchAWSService: be5278dfd6c7a6d0d8d6843f6b5a0e66dc3c31e2
+  StitchCore: 93969ed38c0777c9d12f3497a0fc37776e618ad5
+  StitchCoreAWSService: dd781f41f7204771cbd77afba55e9f5529f05272
+  StitchCoreRemoteMongoDBService: ea279f1595bd4bd08fd7b0154a2265cf160adbc3
+  StitchCoreSDK: c11f3f141b17f7da04bc204769355899c5de80ce
+  StitchRemoteMongoDBService: e647002187b90bafcf83b7d2d5600016f6712417
+  StitchSDK: 066c767799237d3ddf49ba702f8fdc4199e7e68e
+
+PODFILE CHECKSUM: 11408f9bcf0f728e99c8c4d07871d2cff21101de
+
+COCOAPODS: 1.5.3

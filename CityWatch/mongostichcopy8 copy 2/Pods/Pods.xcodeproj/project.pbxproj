@@ -1,0 +1,2448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B32D74230D870480E76277CBB24CDF /* StitchAppClientInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCF667D41F0198F688DE567DD76989A /* StitchAppClientInfo.swift */; };
+		02130AD0DA2056C4902749F28538F70B /* StitchPushClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FBBB29F111EB8917EDE9B18FAB2C3 /* StitchPushClient.swift */; };
+		030F9F8831716F2538A4748AB76B2EC5 /* UserAPIKeyCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE673E3846F79FB45ABF0FA7F7B0F642 /* UserAPIKeyCredential.swift */; };
+		03B9D76822E8BECC7F0EF286E7F9103D /* UserAPIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E7FD6B3995486E1D07DF955EB306ED /* UserAPIKey.swift */; };
+		046E50B2AE8A6A92365B6F0F6CE25E73 /* AuthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C4D6423DE7B40A52D56695F9E5EE06 /* AuthInfo.swift */; };
+		05916608B162D51895E2C9CD9179FCF2 /* CoreUserAPIKeyAuthProviderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0193875718A0AC7EB5EC926BFA2E0A3A /* CoreUserAPIKeyAuthProviderClient.swift */; };
+		078261D33AB03EE64F8D1D8979C55942 /* AnonymousCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3C5E457BB88728DDB4FB024B52553 /* AnonymousCredential.swift */; };
+		079DB95901E4E75C8327E8CA2BA5E4F6 /* RemoteDeleteResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E15D8F65211BCD7EB2172B082A67B0 /* RemoteDeleteResult.swift */; };
+		085EF702CC6F497C46B33B38D7F3564B /* StitchCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3738BE8EF82FCE897B3B74739E1D12 /* StitchCoreSDK.framework */; };
+		0A616AC10C10DC5E62C4E9D088EBC485 /* CoreUserPasswordAuthProviderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBDC1885EF7C84652E9642071340A04 /* CoreUserPasswordAuthProviderClient.swift */; };
+		0A83803583EF35359386104F0677FEFB /* StitchCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3738BE8EF82FCE897B3B74739E1D12 /* StitchCoreSDK.framework */; };
+		0A9D52B4A3B4882F79FCEA5EF0E1B09D /* RemoteMongoReadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440811722CF04FDCD7E55F185EE42319 /* RemoteMongoReadOperation.swift */; };
+		0B67BE41B402C29C0295A40AC815C24A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F951FEDF38B418AE1D093C118D270377 /* Foundation.framework */; };
+		0C74C0AE273B9E77BD489A1CE9FD14A2 /* CoreStitchServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EAC137F9A9534ECC1B97F9E36553D1 /* CoreStitchServiceClient.swift */; };
+		0E2E2E91B6C33481C3F00EEC70A8B398 /* AccessTokenRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7EF00398F82E78FA5B9F2A20736AAC /* AccessTokenRefresher.swift */; };
+		0F5A1CD76F73C2AB5C21CBD1AF6307C3 /* StoreAuthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8972FF428AB0401B14089D0DA67F3C80 /* StoreAuthInfo.swift */; };
+		0F76E348C8392A1BE2968D26CF2F7D29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F951FEDF38B418AE1D093C118D270377 /* Foundation.framework */; };
+		0F9A4B6C1641BE9DED6AD98949C596A7 /* StitchAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68B74B1C6F879A4B1B32DA52B3C6147 /* StitchAuthRequest.swift */; };
+		12F8774D0938B67D1ADEE619B4EC86D6 /* CoreStitchAppClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC1B1E818D121A9B615CB9811A0CE14 /* CoreStitchAppClient.swift */; };
+		1366C8D09BACBA6D48530182AA09EB3D /* StitchAuthDocRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82CBAD383E3C3C621BDDA13AE4FE5DF /* StitchAuthDocRequest.swift */; };
+		151C8831AB558BCA7A1FC88657633F21 /* APICoreUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A7AF1891E23B197D47F4D267D43658 /* APICoreUserProfile.swift */; };
+		15DF8D024B1EB2347CCC464DCDEBB200 /* CustomAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B903B42D4F80786C97ECC3B200996A5B /* CustomAuthProvider.swift */; };
+		19A9F84463C6053A22F6FC3B692BDD5C /* StoreCoreUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F463C4372A4020F293E142076D2B1B /* StoreCoreUserProfile.swift */; };
+		19F285F4C51E7E15FA5716E4B05A4843 /* StitchCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 734B9C7889EA3B33E1CC8898E9D8D867 /* StitchCore.framework */; };
+		1C2588D269B9A47A35B1DAA8DAF4368C /* CoreRemoteMongoDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD17E180C2EBFF3953A548F4DDC5384 /* CoreRemoteMongoDatabase.swift */; };
+		1DA02A4F3D461D2F3D7576F8C79AB09D /* AWSServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15F8805377BB66F1696CA5E971D84D /* AWSServiceClient.swift */; };
+		1F853DFC58AFF1E994CD6FBCEBEBCF41 /* UserPasswordCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B3182A71BABD05443C43C6B4A07FE6 /* UserPasswordCredential.swift */; };
+		21A6512CFD8AF1493A779936ECCF83A9 /* StitchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0307F6E6C0F22DE7B9539CB469370BC3 /* StitchResult.swift */; };
+		21E512290FBBEC548C7B97A565042EFE /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23368C4F0ADC29F920410E00F5C6461E /* Storage.swift */; };
+		25A0D73C05A3B0969FBE0C1ACD0802EA /* Pods-mongostichUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E89E3BC36C97294B7B062094A59E27B /* Pods-mongostichUITests-dummy.m */; };
+		2815360134FA195EC17829227C889355 /* CoreStitchAuth+StitchAuthRequestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F793FB9B1EECF98320033FA87DF475 /* CoreStitchAuth+StitchAuthRequestClient.swift */; };
+		29BAC05B6AAC1822DC0932B3BD960156 /* StitchCoreAWSService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 033AC995332858739F2B25990127819F /* StitchCoreAWSService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C4966E0199B45A9C89D67A6EAE032FA /* CoreRemoteMongoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FE28AE953BC92F79730AFA1C26854F /* CoreRemoteMongoClient.swift */; };
+		32940C4FA485801F226E2DAB93C33512 /* StitchAuthRequestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D23C664E73F8948EA6C87C7768C8EBF /* StitchAuthRequestClient.swift */; };
+		3404EF37AD9461C2C06391F343DA5964 /* Pods-mongostich-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34B7E3D226C14F52697864E3936A206D /* Pods-mongostich-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3494474A7EC7DB877BBC33C7DC8480D9 /* StitchServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE0898099D17B0B27157DF8839D7746 /* StitchServiceClient.swift */; };
+		34E851F5FFF5E0BF7157FC033B2AD383 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F951FEDF38B418AE1D093C118D270377 /* Foundation.framework */; };
+		38ACBA2EEF88F5B77C1F792778A46EC5 /* StitchCoreSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03795CA7E41C9013171717B7DE773141 /* StitchCoreSDK-dummy.m */; };
+		3A3D23E39C0E91D070D603AFE76FE23F /* UserPasswordAuthProviderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82378687A3F466050422CE0597A04B12 /* UserPasswordAuthProviderClient.swift */; };
+		3B8118EBF2A1ED89EC739CE19A040CA7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F951FEDF38B418AE1D093C118D270377 /* Foundation.framework */; };
+		3C513F654AC98971BA53171B5930D495 /* StitchAppClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5E3DB9896B7413C451009BABC7A70D /* StitchAppClientImpl.swift */; };
+		3C6F3980CB5531135BCCBB48DD1E9469 /* StitchCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE854D83FCC81609C339B66F8C1370A /* StitchCredential.swift */; };
+		408B5FD736EE633604ED53B466E77399 /* CoreStitchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B983C6716D298E4FA5E2285A0F062F9F /* CoreStitchUser.swift */; };
+		4187710BCF36FC8F16485E0137A36CF7 /* Pods-mongostich-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E48E89EB1BC9EEDB516070463B2FAFA /* Pods-mongostich-dummy.m */; };
+		41D82731EDB85095106FABE0918B85E4 /* CoreStitchPushClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFABF1AC9E0FCF7953624BA30AFBF5A /* CoreStitchPushClientImpl.swift */; };
+		43770FE013E0F1544796F9AE2B49758D /* Pods-mongostichTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFE7BE6056A2DC17742F0C498854D93 /* Pods-mongostichTests-dummy.m */; };
+		4508322EC4632F1EA66BB9FC078429C7 /* CoreAuthProviderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179E9EADC1AF2447546BA2632ED6A129 /* CoreAuthProviderClient.swift */; };
+		45ABF01C11CE95A51D30B77DA0EC1ED8 /* RemoteMongoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BB8AF6220DBBCE74E21EEBE46245E3 /* RemoteMongoClient.swift */; };
+		47F20880EF7DF28B155771C0408A4BA5 /* StitchUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1707314CD337A0D5FCED91AC4C9B22C8 /* StitchUserProfile.swift */; };
+		482F885B4E1FB24A20DB79503DB5A0B6 /* StitchClientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479757BB455FF44F177F5BF8726B08C3 /* StitchClientConfiguration.swift */; };
+		49F1068B19814B3B6CFE4DC7B06A8CAD /* CoreStitchAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9574AE439B04C1842279777C77233D4 /* CoreStitchAuth.swift */; };
+		4B3FE8F90F352C78119C256B0BAB050F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E68DEBEE08AD5675815C3ECE7C444B7 /* Request.swift */; };
+		4E03BF75CAF743606E04E7A1A70F726A /* RemoteCountOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DD745B8CBEA96C061E3B3D2E81F00 /* RemoteCountOptions.swift */; };
+		5070E900357F14A32046EE33322B6674 /* ThrowingServiceClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51FD888AA0C8E3A7723ECA642090F36 /* ThrowingServiceClientFactory.swift */; };
+		53EE4882B7C696C895A9C165625E9CEB /* StitchRequestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A05C9C9B69F76029C1B0B728E422CD /* StitchRequestClient.swift */; };
+		552D93FF8AE6736F8E4E6C5A9811830A /* APIAuthInfoImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E010C5CC909AB78B0CA1039B91DC46F /* APIAuthInfoImpl.swift */; };
+		5642A74ADA5E1C7F47B4DFDFD388B2B0 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC1D14FDEDC8160DAF93CE996593E5 /* ContentType.swift */; };
+		57888D274EF5CB008EBCA368AFB69F60 /* ImmutableStitchAppClientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42F40BFF0C79EDF10BDC04D8783379E /* ImmutableStitchAppClientConfiguration.swift */; };
+		5C106D4E16C55F279F9E4D69EB82A3A8 /* FoundationHTTPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6386FD08658F9EA6F8226233D575E75 /* FoundationHTTPTransport.swift */; };
+		5E6793DA442B372CC0872FE17C6E9D8D /* StitchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52162689EE0961AA9DDE9C07ADC6B0 /* StitchRequest.swift */; };
+		5FD94C8A4EB11544CCCA92EDB7B8B845 /* GoogleAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE60FA9BD183C04E79A8D425DDC76D43 /* GoogleAuthProvider.swift */; };
+		61FC244A7EC78A4CFD1C96BF487AFEB5 /* StitchCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C082423BFB6623BF0AFFC5387F10D6B1 /* StitchCore-dummy.m */; };
+		623A66F22B5101B0C2D258EC91CF9CCF /* StitchDocRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE67C49DF5C1D7DA541453049DC07D41 /* StitchDocRequest.swift */; };
+		629492C8071DD9B49F8778EBE55E166C /* StitchCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0069DD66F6F43505CE7F8CB09AA52F99 /* StitchCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6495F6BF00E5DAB6B1500FA64B957D7F /* StitchAuthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893E2717BBCB46544CEE2201526B5CF2 /* StitchAuthDelegate.swift */; };
+		65896F7FA3A3430D129B0D5EA6F54D4F /* StitchAppClientConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6E4A2449E14CB55F7103FD9BBED6E /* StitchAppClientConfiguration.swift */; };
+		6610313659666B435431FE16902FD739 /* StitchCoreRemoteMongoDBService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD89D5F866A5F7F76D8CA79752493F79 /* StitchCoreRemoteMongoDBService.framework */; };
+		6620E132DCB0AD996CDDD9A6E5C8C0E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F951FEDF38B418AE1D093C118D270377 /* Foundation.framework */; };
+		6A85C44595B624F56E0DA48EDA5BC832 /* StitchServiceClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD61B0C86B41EB9131DC0182B98B2A29 /* StitchServiceClientImpl.swift */; };
+		6ADD2495C03CD83F7DAD502A902A1E00 /* CoreRemoteMongoCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DC2C72F8246D05676F3FF749B02C9E /* CoreRemoteMongoCursor.swift */; };
+		6F24444A8E4697140DB47F4A9D5BBD41 /* DeviceField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7323924247A354507A7A2A18E723B05 /* DeviceField.swift */; };
+		70AE12A734C1853C430B135D8DE40C7C /* StitchUserFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135075B987CF9A7BD2BB6642D031A1D3 /* StitchUserFactoryImpl.swift */; };
+		72EDD18FBCDA5C38998DB447638BD804 /* AuthProviderClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C6A90EC0E5546F1EB2BB0507CCFD64 /* AuthProviderClientFactory.swift */; };
+		76248D6F9B0BF88058CF85F202D70860 /* AnonymousAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E501EC58434FBC680AE69B4A038A5C1 /* AnonymousAuthProvider.swift */; };
+		77D64E355DBC22CCA2F68475540C8DFC /* StitchAWSServiceExports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8038A2A065D4E9C9200EA760892352A0 /* StitchAWSServiceExports.swift */; };
+		78469D480E05598BAF6330F55DE271DA /* StitchRemoteMongoDBService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AB1AD64B0ACA6F593AD541F5CAFD8 /* StitchRemoteMongoDBService-dummy.m */; };
+		78D194C58C29FC038782FB83A38C5E61 /* RemoteMongoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406A751551FA8FE2ADE8264825180F86 /* RemoteMongoCollection.swift */; };
+		794FAA4C5EE07A0EBEC4C25C571C5D9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F951FEDF38B418AE1D093C118D270377 /* Foundation.framework */; };
+		7A25F106AF709741C14AF02A552259F6 /* StitchPushClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192EB9094C7FB8225D5FD9F18FD775D0 /* StitchPushClientImpl.swift */; };
+		7B7CDA945865D77B635CEDCCB5AC3A0C /* StitchPushRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A9A559725EEB9CFE3767A90CBA383A /* StitchPushRoutes.swift */; };
+		7D0A4F7973333FE806ECA8CF8283A292 /* CoreStitchServiceClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A0D678EBED9C0170386C277421519D /* CoreStitchServiceClientImpl.swift */; };
+		7FF33F1ED6DD3CF3F0D34CCF76C796DC /* ServerAPIKeyAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8709CE435CD54F234B9B9282F5801A /* ServerAPIKeyAuthProvider.swift */; };
+		809DE6D574B92B1C856F9B73BEEFE812 /* StitchCoreAWSService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC056BD7282E61F32046C19023D2954F /* StitchCoreAWSService.framework */; };
+		8279ACAFE0350637E7416F459A8CD718 /* StitchCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 734B9C7889EA3B33E1CC8898E9D8D867 /* StitchCore.framework */; };
+		82D2A4FD668DA8DF8AA508FC0797AC24 /* StitchCoreRemoteMongoDBService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E738F3B57A7AA967D4CB00FC1610F2E /* StitchCoreRemoteMongoDBService-dummy.m */; };
+		8536B0B7099E4572472CDA48470209D5 /* StitchCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3738BE8EF82FCE897B3B74739E1D12 /* StitchCoreSDK.framework */; };
+		85F3CCABAE8C83703E6D2A67C14973C2 /* FacebookCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4EFEBB819D809A1F71EB49A9C6F86E /* FacebookCredential.swift */; };
+		875A767604BB37543058A009DF2704DC /* RemoteUpdateResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB96E63AD01D65AE1E723EE1371EEFFE /* RemoteUpdateResult.swift */; };
+		87B7C5A7B64C42B7CAC96BBC8C23E8E8 /* StitchAppClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46019E21FC99B6E07C341047705748F3 /* StitchAppClient.swift */; };
+		881E2D84E277D44BF9CF99530C3FA401 /* StitchPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C2084E30BDB45193C7FE4CD91A50D7 /* StitchPush.swift */; };
+		8B49DE6977B4FFB2A5ED5741B4F3D4E8 /* AuthStateHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B753126056FAD3C99B5F80F3A8D46BEC /* AuthStateHolder.swift */; };
+		8B69F3057BE4ACC6D40B937779949DE6 /* StitchUserImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9024A26458CD5729F0BB61C630CD6C /* StitchUserImpl.swift */; };
+		8BC31FC18A5E26CF80DEB1532DD407D3 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8FBBF6CB4FA57E379E6863960547FD /* Method.swift */; };
+		8CDA2CC0B87913BA2106CBCD47C38A8D /* Pods-mongostichTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D35E7BA2D047A8E7AF4C7F1A76CCD464 /* Pods-mongostichTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F21718BB5590AF0CE093660BB34B117 /* Stitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E6FCE239AA90E9FCA0C8456A00CB0C /* Stitch.swift */; };
+		8F9CB785D0F0201311D052FB1693BFF0 /* RemoteInsertManyResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CF21730E21202A6BF3F7E0034B48B7 /* RemoteInsertManyResult.swift */; };
+		90393B86BEFD0E7B48D4AB6B6E6844F7 /* StitchAppRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C28816844287F4863FEDE6FA9A1051 /* StitchAppRoutes.swift */; };
+		9226CC0A2EBBF7FC333A7AE84F92A056 /* CustomCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D2A93DA7CAD113E33E0FD1670853D2 /* CustomCredential.swift */; };
+		9434820718764DC362A2F1F01F0BF91C /* StitchAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F4B3A8789621F530422DEB2C63978E /* StitchAuth.swift */; };
+		96F75F1D2C4004EF319346A506532B18 /* StitchCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3738BE8EF82FCE897B3B74739E1D12 /* StitchCoreSDK.framework */; };
+		9744E93361854F0C2EBBEDDF5D363000 /* NamedAuthProviderClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C764C57A58E3F79925B2EF9CB290C0E4 /* NamedAuthProviderClientFactory.swift */; };
+		9CE2ED5B2096D09B4EC874B9B6CE8CE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F951FEDF38B418AE1D093C118D270377 /* Foundation.framework */; };
+		9EB6A870DD1004D9D9EDD9040E8DC164 /* CoreAWSServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCC464E0B63704BE97DEE0471A3FF07 /* CoreAWSServiceClient.swift */; };
+		9EF7ECC5AE252C0D77005211F05BE0FA /* AWSServiceClientImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F5EEA1FDAFBC60B26DC5A05C51F763 /* AWSServiceClientImpl.swift */; };
+		A2E093B81A325459600433E472AC1784 /* StitchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E15D6325CB27ECC99317B538201D54B /* StitchError.swift */; };
+		A4311FC26EA8002DC271D5C911078C51 /* StitchRemoteMongoDBServiceExports.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6986E72F3C2B67ED0D983BECD2B5AD8 /* StitchRemoteMongoDBServiceExports.swift */; };
+		AB6335501400DF20857FB4AF4036B2C6 /* StoreStitchUserIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62EF753269280721AC50E5F32FD3D4E /* StoreStitchUserIdentity.swift */; };
+		AEF3EB2544A4EEE6FCE589D0816F3482 /* StitchCoreExports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FE64D9966C901D0434889797983230 /* StitchCoreExports.swift */; };
+		AFF364121F9184A49854AE410250AA15 /* RemoteUpdateOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2997A8A95C15DCCFAEB1388FE582B0C4 /* RemoteUpdateOptions.swift */; };
+		B148BAD0F8602AB58BE753D756FCBBD2 /* StitchCoreSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B41D77BF0C5AF16042969D0645CFE2B /* StitchCoreSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1C18F82E35882F30D6162BB3AEEB951 /* NamedPushClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B95C548EBE7B0E757FBE0B80EE40019 /* NamedPushClientFactory.swift */; };
+		B2DFC9D55933C96709051CC6F1C477B0 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019B0A9E787B270DB24448E489335E8F /* Transport.swift */; };
+		BAF786BAEDABD298131E1D70C8ED9E6B /* GoogleCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6021CCF54990720207EC30BE238A4BA6 /* GoogleCredential.swift */; };
+		BB32BE20AAA67D0AB60EF36AB7AC6419 /* StitchCoreAWSService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F09324862FE948ADC3A29D06C02753 /* StitchCoreAWSService-dummy.m */; };
+		BC9E9867CC9E2C727BFA0CE00F04EBB1 /* StitchAuthImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF2449D8C64DCF7E434D9F07B679024 /* StitchAuthImpl.swift */; };
+		BDB08874A136C9FD1E249B1FA9647ED5 /* OperationDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07038B8A3C4669A8BC00026AB6F92DE8 /* OperationDispatcher.swift */; };
+		BE044842A64CAB9A35AB1A7FBE8A8047 /* StitchProviderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FD0DF469C72FBC6A4C38E367FAFC42 /* StitchProviderType.swift */; };
+		C035C5EB8C74C0276D2FFB9E2263FBB1 /* StitchCoreRemoteMongoDBService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDD5E13A322317026FEA34C9D649DFB4 /* StitchCoreRemoteMongoDBService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0787AE6998806E6A975E1C4D5B0C196 /* StitchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2304F8221670F9D33109EE59035C47 /* StitchUser.swift */; };
+		C116B11121B6DC87CAB012877B0B51A5 /* AWSRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DE87F2D5CF83CA4F611B6574D1D6A4 /* AWSRequest.swift */; };
+		C1D6D2209BC2F344AE4E856640706DD1 /* CoreStitchUserImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14BB2F0B43F5918A82378273F54D235 /* CoreStitchUserImpl.swift */; };
+		C562088EEF8F418D044E7CCAD9E1C4F6 /* ServiceClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3076FC89AF036484FD5D3BFBCD8F69 /* ServiceClientFactory.swift */; };
+		C5650FFC16958F01EE0FFA5A6BEA057A /* StitchUserIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAF519672AF6879704A92D763698223 /* StitchUserIdentity.swift */; };
+		C686A46791A8978153A286EFA375EBFD /* StitchUserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDC9038567E651587C1C7FB7DB543AF /* StitchUserFactory.swift */; };
+		C9642D22FFDB834044EB027BFF245C66 /* StitchPushImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7389B27BC23F264836E53C1F38EB33CA /* StitchPushImpl.swift */; };
+		CCB43CA4B43092B229CC58E5160B643E /* RemoteInsertOneResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6AA477E8F297D48033D3BCFBDE45B2 /* RemoteInsertOneResult.swift */; };
+		D205215F541A32A50807B2541C1F7D29 /* StitchRemoteMongoDBService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC738B4C61476488916B8B2912089ADA /* StitchRemoteMongoDBService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D24C8F40B83EA1E887A0CFB30CFEE53A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F951FEDF38B418AE1D093C118D270377 /* Foundation.framework */; };
+		D4A8467ECBDF5DBE3618CBDEF12D7589 /* FacebookAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E740D8D5444DCAE100AB1BB375B414 /* FacebookAuthProvider.swift */; };
+		D5E38F3F04B4E11A4A907E6B78C7DFC8 /* APIAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB294C369138CFBF86F5AFEA569F787 /* APIAccessToken.swift */; };
+		D7C1C19E6829A89BC7F15126434AA911 /* ServerAPIKeyCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFC574801640EED38D0AE6F2D973AE4 /* ServerAPIKeyCredential.swift */; };
+		D8EB6661CE3AF6AED8D0AC426616F6B9 /* StitchAWSService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E0E3F5BAB61A0CBC1E6F87FB451268 /* StitchAWSService-dummy.m */; };
+		D9A5961E69AFDB475BDF21D4A3023A1A /* UserPasswordAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F332F1DE7F380193D19C782FD55A6A4 /* UserPasswordAuthProvider.swift */; };
+		D9FE36FB91EF563D16BE17FF1D1DBF6A /* RemoteMongoCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FD47167F9AFC7A4D06B331225EF84E /* RemoteMongoCursor.swift */; };
+		DA809F59000241F7762197146E7DD752 /* ImplFailureFatalErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0D6EAFA3C99540FE8616752F3F0C7C /* ImplFailureFatalErrors.swift */; };
+		DBBEB459FF13896F3C13CE4AB0472C38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F951FEDF38B418AE1D093C118D270377 /* Foundation.framework */; };
+		DC6C1DBAF5DE107231EFCEE2E0BAB1CD /* ProviderCapabilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6E453E87E6C1ED2E2A1F1A49837159 /* ProviderCapabilities.swift */; };
+		E0AE3313C625EB292DA4D76D22CD4961 /* RemoteMongoDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D253124F48233C8B87AEA6BA28076AA /* RemoteMongoDatabase.swift */; };
+		E263C384FC624A6C060A1C59B2C51941 /* StitchCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B3738BE8EF82FCE897B3B74739E1D12 /* StitchCoreSDK.framework */; };
+		E3D780506EAF521E6177667615B44A7E /* CoreStitchPushClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C5FEE5C626131DB4DEB79327236266 /* CoreStitchPushClient.swift */; };
+		E41AC0D6C2EB4013668143E35460A29C /* Headers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DCC20835AD89F1A2433B0B6566B5E6 /* Headers.swift */; };
+		E4B9FC7BCCF4FB30F528DFC2C3D6812A /* UserAPIKeyAuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6DB1DE32024CBBEB3695957B9FEE4E /* UserAPIKeyAuthProvider.swift */; };
+		E863E69FCF18232362ACDC6A1D144CCD /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C154AB4903021BCFE679D349158EA6F /* JWT.swift */; };
+		E9591A05573F7D0DB499016A273F5DF3 /* UserAPIKeyAuthProviderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D9D85E2F9CD54C68A8F59A1BE024FC /* UserAPIKeyAuthProviderClient.swift */; };
+		EA0C1F39F4B7AE685CCD4335451589BB /* APIStitchUserIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27F64E0A67322E5214F98CFB00A839D /* APIStitchUserIdentity.swift */; };
+		EA65D53AC7F3161C3BF59EE0A2FA0EDF /* NamedServiceClientFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EAADC26542BC59FD8541A21BB58D8C /* NamedServiceClientFactory.swift */; };
+		EBB1A8B4BC1A45CB5CA78F48714DCA50 /* Pods-mongostichUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E857BA3FC150EF94E179413F2A0234D7 /* Pods-mongostichUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5014456B418613301567C38342DDFD4 /* CoreRemoteMongoReadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256FDEFDD429E5C61D0BF25716C68F47 /* CoreRemoteMongoReadOperation.swift */; };
+		F8DAE2D2760BE87D34059206E4C1361A /* CoreRemoteMongoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B64D9798576867F91552B30267009CA /* CoreRemoteMongoCollection.swift */; };
+		FABB143A9764C5C9EF3262D28D91939F /* RemoteFindOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987CFB6C270E593F2006253B7D22DD32 /* RemoteFindOptions.swift */; };
+		FECF83790791EBE333DE99133BD44F94 /* StitchAWSService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 419467D3AE506D06531870F6D1D77CE8 /* StitchAWSService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D24994E4F0D9DCE270C16525D69A95E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C87DA930BF7C75736FD7DB16A391A70B;
+			remoteInfo = "Pods-mongostich";
+		};
+		31195A5D6A2CA1D1CBB1479627BF9920 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14B134218935AF37A1975D03DF555B49;
+			remoteInfo = StitchCoreRemoteMongoDBService;
+		};
+		4A60733FB273ED260403121CB2EF1713 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B92303FD691F889B2C8F0ADA36AD3F5;
+			remoteInfo = StitchCoreSDK;
+		};
+		6498FC293C0C50450E76865944B160F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72F6443C53D0FF21AB6BA0AB76C900BB;
+			remoteInfo = StitchCore;
+		};
+		734FCA5EFE6D578F91E1ED5C1F6B4206 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E660F277510CAF91E685168470300D;
+			remoteInfo = StitchCoreAWSService;
+		};
+		7439314AFBED6BD837ABF15A0A45F22C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72F6443C53D0FF21AB6BA0AB76C900BB;
+			remoteInfo = StitchCore;
+		};
+		85B4EF1BD1C329963A2369A41914C479 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 318A60D73CC969E28F3AF0BEA1B4EE3A;
+			remoteInfo = StitchAWSService;
+		};
+		8B026B88916C8B3B936D24392BEE8B7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B92303FD691F889B2C8F0ADA36AD3F5;
+			remoteInfo = StitchCoreSDK;
+		};
+		9724E0462429D2C8B2524A2D8BD38419 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08E0A4521BBA5808755D2965FB0BB662;
+			remoteInfo = StitchRemoteMongoDBService;
+		};
+		9AB362A9F75665C24F847DA19599A0F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B92303FD691F889B2C8F0ADA36AD3F5;
+			remoteInfo = StitchCoreSDK;
+		};
+		A7065986EC35DE32AA9E36A45FF313D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E660F277510CAF91E685168470300D;
+			remoteInfo = StitchCoreAWSService;
+		};
+		A82DAD0A1A948BD25DFE37F832248B13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C87DA930BF7C75736FD7DB16A391A70B;
+			remoteInfo = "Pods-mongostich";
+		};
+		ABB8C6B46FB7C5919389C792BEB20651 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B92303FD691F889B2C8F0ADA36AD3F5;
+			remoteInfo = StitchCoreSDK;
+		};
+		BDAA9FAC6ECC7A83575A33ECF2759B92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B92303FD691F889B2C8F0ADA36AD3F5;
+			remoteInfo = StitchCoreSDK;
+		};
+		F12F76771B9E22D70FCB8611659544BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14B134218935AF37A1975D03DF555B49;
+			remoteInfo = StitchCoreRemoteMongoDBService;
+		};
+		F32AF746AF592D66A2ECA020E31FB09C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72F6443C53D0FF21AB6BA0AB76C900BB;
+			remoteInfo = StitchCore;
+		};
+		F95B250C8D5C8668E93488B8996E56FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B92303FD691F889B2C8F0ADA36AD3F5;
+			remoteInfo = StitchCoreSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0069DD66F6F43505CE7F8CB09AA52F99 /* StitchCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StitchCore-umbrella.h"; sourceTree = "<group>"; };
+		0193875718A0AC7EB5EC926BFA2E0A3A /* CoreUserAPIKeyAuthProviderClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreUserAPIKeyAuthProviderClient.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/UserAPIKey/CoreUserAPIKeyAuthProviderClient.swift; sourceTree = "<group>"; };
+		019B0A9E787B270DB24448E489335E8F /* Transport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Internal/Net/Transport.swift; sourceTree = "<group>"; };
+		0217BE86A41C749F5A4E407C1A5C0ADD /* StitchRemoteMongoDBService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StitchRemoteMongoDBService-prefix.pch"; sourceTree = "<group>"; };
+		0307F6E6C0F22DE7B9539CB469370BC3 /* StitchResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchResult.swift; path = Darwin/StitchCore/StitchCore/Core/StitchResult.swift; sourceTree = "<group>"; };
+		033AC995332858739F2B25990127819F /* StitchCoreAWSService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StitchCoreAWSService-umbrella.h"; sourceTree = "<group>"; };
+		03795CA7E41C9013171717B7DE773141 /* StitchCoreSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StitchCoreSDK-dummy.m"; sourceTree = "<group>"; };
+		04C6A90EC0E5546F1EB2BB0507CCFD64 /* AuthProviderClientFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthProviderClientFactory.swift; path = Darwin/StitchCore/StitchCore/Core/Auth/Providers/AuthProviderClientFactory.swift; sourceTree = "<group>"; };
+		06F09324862FE948ADC3A29D06C02753 /* StitchCoreAWSService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StitchCoreAWSService-dummy.m"; sourceTree = "<group>"; };
+		07038B8A3C4669A8BC00026AB6F92DE8 /* OperationDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperationDispatcher.swift; path = Darwin/StitchCore/StitchCore/Core/Internal/Common/OperationDispatcher.swift; sourceTree = "<group>"; };
+		08CF21730E21202A6BF3F7E0034B48B7 /* RemoteInsertManyResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteInsertManyResult.swift; path = Core/Services/StitchCoreRemoteMongoDBService/Sources/StitchCoreRemoteMongoDBService/RemoteInsertManyResult.swift; sourceTree = "<group>"; };
+		09EAC137F9A9534ECC1B97F9E36553D1 /* CoreStitchServiceClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreStitchServiceClient.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Services/Internal/CoreStitchServiceClient.swift; sourceTree = "<group>"; };
+		0A0D6EAFA3C99540FE8616752F3F0C7C /* ImplFailureFatalErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImplFailureFatalErrors.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Internal/Common/ImplFailureFatalErrors.swift; sourceTree = "<group>"; };
+		0CDC9038567E651587C1C7FB7DB543AF /* StitchUserFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchUserFactory.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/StitchUserFactory.swift; sourceTree = "<group>"; };
+		0E010C5CC909AB78B0CA1039B91DC46F /* APIAuthInfoImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIAuthInfoImpl.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/Models/APIAuthInfoImpl.swift; sourceTree = "<group>"; };
+		0E738F3B57A7AA967D4CB00FC1610F2E /* StitchCoreRemoteMongoDBService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StitchCoreRemoteMongoDBService-dummy.m"; sourceTree = "<group>"; };
+		0F15A42EA4F45C62F08B8EA0691201E8 /* StitchCoreRemoteMongoDBService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StitchCoreRemoteMongoDBService.xcconfig; sourceTree = "<group>"; };
+		0FCF667D41F0198F688DE567DD76989A /* StitchAppClientInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchAppClientInfo.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/StitchAppClientInfo.swift; sourceTree = "<group>"; };
+		135075B987CF9A7BD2BB6642D031A1D3 /* StitchUserFactoryImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchUserFactoryImpl.swift; path = Darwin/StitchCore/StitchCore/Core/Auth/Internal/StitchUserFactoryImpl.swift; sourceTree = "<group>"; };
+		13DFE1059B4B1C44E6F161F25F68FECA /* Pods-mongostichTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-mongostichTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		14C2084E30BDB45193C7FE4CD91A50D7 /* StitchPush.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchPush.swift; path = Darwin/StitchCore/StitchCore/Core/Push/StitchPush.swift; sourceTree = "<group>"; };
+		15C4D6423DE7B40A52D56695F9E5EE06 /* AuthInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthInfo.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/AuthInfo.swift; sourceTree = "<group>"; };
+		1707314CD337A0D5FCED91AC4C9B22C8 /* StitchUserProfile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchUserProfile.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/StitchUserProfile.swift; sourceTree = "<group>"; };
+		179E9EADC1AF2447546BA2632ED6A129 /* CoreAuthProviderClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreAuthProviderClient.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/Internal/CoreAuthProviderClient.swift; sourceTree = "<group>"; };
+		17FE64D9966C901D0434889797983230 /* StitchCoreExports.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchCoreExports.swift; path = Darwin/StitchCore/StitchCore/StitchCoreExports.swift; sourceTree = "<group>"; };
+		192EB9094C7FB8225D5FD9F18FD775D0 /* StitchPushClientImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchPushClientImpl.swift; path = Darwin/StitchCore/StitchCore/Core/Push/Internal/StitchPushClientImpl.swift; sourceTree = "<group>"; };
+		1A79280A866EA3491E684EBB7438181A /* StitchRemoteMongoDBService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StitchRemoteMongoDBService.modulemap; sourceTree = "<group>"; };
+		1AF504569A1E1DFD3D21EE2106E4223A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BBDC1885EF7C84652E9642071340A04 /* CoreUserPasswordAuthProviderClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreUserPasswordAuthProviderClient.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/UserPassword/CoreUserPasswordAuthProviderClient.swift; sourceTree = "<group>"; };
+		1C33BD4AD1E30D0E0E164B6423D3BBDE /* Pods-mongostichTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mongostichTests.release.xcconfig"; sourceTree = "<group>"; };
+		1C6DB1DE32024CBBEB3695957B9FEE4E /* UserAPIKeyAuthProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserAPIKeyAuthProvider.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/UserAPIKey/UserAPIKeyAuthProvider.swift; sourceTree = "<group>"; };
+		1D4DCCC6050ED7F1F44CDAF8E5BC8849 /* StitchCoreRemoteMongoDBService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StitchCoreRemoteMongoDBService.framework; path = StitchCoreRemoteMongoDBService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		221650E4E07100D9F4D4BC4D002C47DD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23368C4F0ADC29F920410E00F5C6461E /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Internal/Common/Storage.swift; sourceTree = "<group>"; };
+		24E7FD6B3995486E1D07DF955EB306ED /* UserAPIKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserAPIKey.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/UserAPIKey/Models/UserAPIKey.swift; sourceTree = "<group>"; };
+		256FDEFDD429E5C61D0BF25716C68F47 /* CoreRemoteMongoReadOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreRemoteMongoReadOperation.swift; path = Core/Services/StitchCoreRemoteMongoDBService/Sources/StitchCoreRemoteMongoDBService/Internal/CoreRemoteMongoReadOperation.swift; sourceTree = "<group>"; };
+		2997A8A95C15DCCFAEB1388FE582B0C4 /* RemoteUpdateOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteUpdateOptions.swift; path = Core/Services/StitchCoreRemoteMongoDBService/Sources/StitchCoreRemoteMongoDBService/RemoteUpdateOptions.swift; sourceTree = "<group>"; };
+		29E740D8D5444DCAE100AB1BB375B414 /* FacebookAuthProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacebookAuthProvider.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/Facebook/FacebookAuthProvider.swift; sourceTree = "<group>"; };
+		2B95C548EBE7B0E757FBE0B80EE40019 /* NamedPushClientFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NamedPushClientFactory.swift; path = Darwin/StitchCore/StitchCore/Core/Push/Internal/NamedPushClientFactory.swift; sourceTree = "<group>"; };
+		2D8B6C783F26DE651046F354A3661F72 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E0AB1AD64B0ACA6F593AD541F5CAFD8 /* StitchRemoteMongoDBService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StitchRemoteMongoDBService-dummy.m"; sourceTree = "<group>"; };
+		2E68DEBEE08AD5675815C3ECE7C444B7 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Internal/Net/Requests/Request.swift; sourceTree = "<group>"; };
+		2FBE8FCF44214072399712AB4CCA1462 /* Pods-mongostichUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mongostichUITests-frameworks.sh"; sourceTree = "<group>"; };
+		31DCC20835AD89F1A2433B0B6566B5E6 /* Headers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Headers.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Internal/Net/Headers.swift; sourceTree = "<group>"; };
+		34B7E3D226C14F52697864E3936A206D /* Pods-mongostich-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-mongostich-umbrella.h"; sourceTree = "<group>"; };
+		36C5FEE5C626131DB4DEB79327236266 /* CoreStitchPushClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreStitchPushClient.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Push/Internal/CoreStitchPushClient.swift; sourceTree = "<group>"; };
+		38B3144F8C10E2E80160635AD4E57D2A /* libbson.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libbson.framework; path = Frameworks/ios/libbson.framework; sourceTree = "<group>"; };
+		3C6E453E87E6C1ED2E2A1F1A49837159 /* ProviderCapabilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProviderCapabilities.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/ProviderCapabilities.swift; sourceTree = "<group>"; };
+		3C9024A26458CD5729F0BB61C630CD6C /* StitchUserImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchUserImpl.swift; path = Darwin/StitchCore/StitchCore/Core/Auth/Internal/StitchUserImpl.swift; sourceTree = "<group>"; };
+		3D23C664E73F8948EA6C87C7768C8EBF /* StitchAuthRequestClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchAuthRequestClient.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/StitchAuthRequestClient.swift; sourceTree = "<group>"; };
+		3F731C1F34DBCF639A81E501DF971BBB /* Pods-mongostich-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-mongostich-acknowledgements.markdown"; sourceTree = "<group>"; };
+		402A7580158556FAD2DA6724F9390C07 /* Pods-mongostichTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-mongostichTests.modulemap"; sourceTree = "<group>"; };
+		406A751551FA8FE2ADE8264825180F86 /* RemoteMongoCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteMongoCollection.swift; path = Darwin/Services/StitchRemoteMongoDBService/StitchRemoteMongoDBService/RemoteMongoCollection.swift; sourceTree = "<group>"; };
+		419467D3AE506D06531870F6D1D77CE8 /* StitchAWSService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StitchAWSService-umbrella.h"; sourceTree = "<group>"; };
+		423D6DEEBD8DC456308EC3D2FF29018E /* Pods-mongostichUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mongostichUITests-resources.sh"; sourceTree = "<group>"; };
+		43CF3071A951F544964F77B0446F56E3 /* Pods-mongostichUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mongostichUITests.release.xcconfig"; sourceTree = "<group>"; };
+		440811722CF04FDCD7E55F185EE42319 /* RemoteMongoReadOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteMongoReadOperation.swift; path = Darwin/Services/StitchRemoteMongoDBService/StitchRemoteMongoDBService/RemoteMongoReadOperation.swift; sourceTree = "<group>"; };
+		46019E21FC99B6E07C341047705748F3 /* StitchAppClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchAppClient.swift; path = Darwin/StitchCore/StitchCore/Core/StitchAppClient.swift; sourceTree = "<group>"; };
+		479757BB455FF44F177F5BF8726B08C3 /* StitchClientConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchClientConfiguration.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/StitchClientConfiguration.swift; sourceTree = "<group>"; };
+		48A7AF1891E23B197D47F4D267D43658 /* APICoreUserProfile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APICoreUserProfile.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/Models/APICoreUserProfile.swift; sourceTree = "<group>"; };
+		4972EEEB1307B2051265531620484461 /* StitchCoreAWSService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StitchCoreAWSService.modulemap; sourceTree = "<group>"; };
+		4A468CF1C20A648F69C87A2EBB28CC1E /* StitchCoreSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StitchCoreSDK.modulemap; sourceTree = "<group>"; };
+		4B41D77BF0C5AF16042969D0645CFE2B /* StitchCoreSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StitchCoreSDK-umbrella.h"; sourceTree = "<group>"; };
+		4B52162689EE0961AA9DDE9C07ADC6B0 /* StitchRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchRequest.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Internal/Net/Requests/StitchRequest.swift; sourceTree = "<group>"; };
+		4CAF519672AF6879704A92D763698223 /* StitchUserIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchUserIdentity.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/StitchUserIdentity.swift; sourceTree = "<group>"; };
+		4CF2449D8C64DCF7E434D9F07B679024 /* StitchAuthImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchAuthImpl.swift; path = Darwin/StitchCore/StitchCore/Core/Auth/Internal/StitchAuthImpl.swift; sourceTree = "<group>"; };
+		4D15F8805377BB66F1696CA5E971D84D /* AWSServiceClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AWSServiceClient.swift; path = Darwin/Services/StitchAWSService/StitchAWSService/AWSServiceClient.swift; sourceTree = "<group>"; };
+		4D253124F48233C8B87AEA6BA28076AA /* RemoteMongoDatabase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteMongoDatabase.swift; path = Darwin/Services/StitchRemoteMongoDBService/StitchRemoteMongoDBService/RemoteMongoDatabase.swift; sourceTree = "<group>"; };
+		4F332F1DE7F380193D19C782FD55A6A4 /* UserPasswordAuthProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserPasswordAuthProvider.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/UserPassword/UserPasswordAuthProvider.swift; sourceTree = "<group>"; };
+		58FE28AE953BC92F79730AFA1C26854F /* CoreRemoteMongoClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreRemoteMongoClient.swift; path = Core/Services/StitchCoreRemoteMongoDBService/Sources/StitchCoreRemoteMongoDBService/Internal/CoreRemoteMongoClient.swift; sourceTree = "<group>"; };
+		59575A56ECB7848833450A7FAAF01111 /* Pods-mongostich.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mongostich.release.xcconfig"; sourceTree = "<group>"; };
+		5A8FBBF6CB4FA57E379E6863960547FD /* Method.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Method.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Internal/Net/Method.swift; sourceTree = "<group>"; };
+		5B3738BE8EF82FCE897B3B74739E1D12 /* StitchCoreSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StitchCoreSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B64D9798576867F91552B30267009CA /* CoreRemoteMongoCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreRemoteMongoCollection.swift; path = Core/Services/StitchCoreRemoteMongoDBService/Sources/StitchCoreRemoteMongoDBService/Internal/CoreRemoteMongoCollection.swift; sourceTree = "<group>"; };
+		5E501EC58434FBC680AE69B4A038A5C1 /* AnonymousAuthProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnonymousAuthProvider.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/Anonymous/AnonymousAuthProvider.swift; sourceTree = "<group>"; };
+		6021CCF54990720207EC30BE238A4BA6 /* GoogleCredential.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleCredential.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/Google/GoogleCredential.swift; sourceTree = "<group>"; };
+		60BA5D2125EE32C05245E0AD491CF603 /* StitchAWSService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StitchAWSService.framework; path = StitchAWSService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C28816844287F4863FEDE6FA9A1051 /* StitchAppRoutes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchAppRoutes.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Internal/Net/StitchAppRoutes.swift; sourceTree = "<group>"; };
+		65534152994FD2AD294ABA03ADC7301F /* Pods_mongostichUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_mongostichUITests.framework; path = "Pods-mongostichUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67E0E3F5BAB61A0CBC1E6F87FB451268 /* StitchAWSService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StitchAWSService-dummy.m"; sourceTree = "<group>"; };
+		6C458975B261B9A97BC8695BE293686C /* StitchRemoteMongoDBService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StitchRemoteMongoDBService.xcconfig; sourceTree = "<group>"; };
+		6C565FDFD8D627B45043692964EE248D /* MongoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MongoSwift.framework; path = Frameworks/ios/MongoSwift.framework; sourceTree = "<group>"; };
+		6CD4D2F430679271ECA7326E5606D34A /* Pods_mongostich.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_mongostich.framework; path = "Pods-mongostich.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E9A3062B3F0544DDEC57FD0B6CCAE1E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71F463C4372A4020F293E142076D2B1B /* StoreCoreUserProfile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreCoreUserProfile.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/Models/StoreCoreUserProfile.swift; sourceTree = "<group>"; };
+		72BA08F8974BD54C9B654712B6A7278B /* StitchCoreSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StitchCoreSDK.xcconfig; sourceTree = "<group>"; };
+		72F24C4853211036CB34C78C85FC6753 /* StitchRemoteMongoDBService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StitchRemoteMongoDBService.framework; path = StitchRemoteMongoDBService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		734B9C7889EA3B33E1CC8898E9D8D867 /* StitchCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StitchCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7389B27BC23F264836E53C1F38EB33CA /* StitchPushImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchPushImpl.swift; path = Darwin/StitchCore/StitchCore/Core/Push/Internal/StitchPushImpl.swift; sourceTree = "<group>"; };
+		755A65B6EA329960B45E683BE44FB05D /* StitchCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StitchCore.modulemap; sourceTree = "<group>"; };
+		7BE29A1ACE2DA00EC04BF362017F93A1 /* Pods-mongostichUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mongostichUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7CF06C750113BE363AF85562F2BAB4A1 /* StitchCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StitchCore.framework; path = StitchCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E15D6325CB27ECC99317B538201D54B /* StitchError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchError.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/StitchError.swift; sourceTree = "<group>"; };
+		7E2304F8221670F9D33109EE59035C47 /* StitchUser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchUser.swift; path = Darwin/StitchCore/StitchCore/Core/Auth/StitchUser.swift; sourceTree = "<group>"; };
+		7E4AABD73D81CA78708EBE39CA442E93 /* Pods-mongostichTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mongostichTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E89E3BC36C97294B7B062094A59E27B /* Pods-mongostichUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mongostichUITests-dummy.m"; sourceTree = "<group>"; };
+		8038A2A065D4E9C9200EA760892352A0 /* StitchAWSServiceExports.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchAWSServiceExports.swift; path = Darwin/Services/StitchAWSService/StitchAWSService/StitchAWSServiceExports.swift; sourceTree = "<group>"; };
+		82378687A3F466050422CE0597A04B12 /* UserPasswordAuthProviderClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserPasswordAuthProviderClient.swift; path = Darwin/StitchCore/StitchCore/Core/Auth/Providers/UserPassword/UserPasswordAuthProviderClient.swift; sourceTree = "<group>"; };
+		87FD0DF469C72FBC6A4C38E367FAFC42 /* StitchProviderType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchProviderType.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/StitchProviderType.swift; sourceTree = "<group>"; };
+		893E2717BBCB46544CEE2201526B5CF2 /* StitchAuthDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchAuthDelegate.swift; path = Darwin/StitchCore/StitchCore/Core/Auth/StitchAuthDelegate.swift; sourceTree = "<group>"; };
+		8972FF428AB0401B14089D0DA67F3C80 /* StoreAuthInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreAuthInfo.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/Models/StoreAuthInfo.swift; sourceTree = "<group>"; };
+		8E48E89EB1BC9EEDB516070463B2FAFA /* Pods-mongostich-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mongostich-dummy.m"; sourceTree = "<group>"; };
+		90D2A93DA7CAD113E33E0FD1670853D2 /* CustomCredential.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomCredential.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/Custom/CustomCredential.swift; sourceTree = "<group>"; };
+		93199E36A151D845D40CD46738B902B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94F793FB9B1EECF98320033FA87DF475 /* CoreStitchAuth+StitchAuthRequestClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CoreStitchAuth+StitchAuthRequestClient.swift"; path = "Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/CoreStitchAuth+StitchAuthRequestClient.swift"; sourceTree = "<group>"; };
+		95F5EEA1FDAFBC60B26DC5A05C51F763 /* AWSServiceClientImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AWSServiceClientImpl.swift; path = Darwin/Services/StitchAWSService/StitchAWSService/Internal/AWSServiceClientImpl.swift; sourceTree = "<group>"; };
+		987CFB6C270E593F2006253B7D22DD32 /* RemoteFindOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteFindOptions.swift; path = Core/Services/StitchCoreRemoteMongoDBService/Sources/StitchCoreRemoteMongoDBService/RemoteFindOptions.swift; sourceTree = "<group>"; };
+		98D53E1CB8AF0CE6B2CFF3170769B83B /* Pods-mongostichUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-mongostichUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9BB3C5E457BB88728DDB4FB024B52553 /* AnonymousCredential.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnonymousCredential.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/Anonymous/AnonymousCredential.swift; sourceTree = "<group>"; };
+		9BB5D5FF2DBA4F238D001C17D7A29774 /* Pods_mongostichTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_mongostichTests.framework; path = "Pods-mongostichTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C154AB4903021BCFE679D349158EA6F /* JWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWT.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/JWT.swift; sourceTree = "<group>"; };
+		9E8CAB744AACB7AF6DD58AFD330A898C /* Pods-mongostichTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mongostichTests-frameworks.sh"; sourceTree = "<group>"; };
+		9FFABF1AC9E0FCF7953624BA30AFBF5A /* CoreStitchPushClientImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreStitchPushClientImpl.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Push/Internal/CoreStitchPushClientImpl.swift; sourceTree = "<group>"; };
+		A0E6FCE239AA90E9FCA0C8456A00CB0C /* Stitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stitch.swift; path = Darwin/StitchCore/StitchCore/Core/Stitch.swift; sourceTree = "<group>"; };
+		A1CC1D14FDEDC8160DAF93CE996593E5 /* ContentType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentType.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Internal/Net/ContentType.swift; sourceTree = "<group>"; };
+		A62EF753269280721AC50E5F32FD3D4E /* StoreStitchUserIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreStitchUserIdentity.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/Models/StoreStitchUserIdentity.swift; sourceTree = "<group>"; };
+		A6386FD08658F9EA6F8226233D575E75 /* FoundationHTTPTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPTransport.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Internal/Net/FoundationHTTPTransport.swift; sourceTree = "<group>"; };
+		A651DF2851D1BC297F60A92A98111C10 /* StitchCoreAWSService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StitchCoreAWSService.xcconfig; sourceTree = "<group>"; };
+		A68B74B1C6F879A4B1B32DA52B3C6147 /* StitchAuthRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchAuthRequest.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Internal/Net/Requests/StitchAuthRequest.swift; sourceTree = "<group>"; };
+		A843C9176353C6F7B1B0E8E0A6F48F8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8DC2C72F8246D05676F3FF749B02C9E /* CoreRemoteMongoCursor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreRemoteMongoCursor.swift; path = Core/Services/StitchCoreRemoteMongoDBService/Sources/StitchCoreRemoteMongoDBService/Internal/CoreRemoteMongoCursor.swift; sourceTree = "<group>"; };
+		A9A903478B8C151C5522726242182498 /* StitchCoreSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StitchCoreSDK-prefix.pch"; sourceTree = "<group>"; };
+		ABE854D83FCC81609C339B66F8C1370A /* StitchCredential.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchCredential.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/StitchCredential.swift; sourceTree = "<group>"; };
+		AD5E3DB9896B7413C451009BABC7A70D /* StitchAppClientImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchAppClientImpl.swift; path = Darwin/StitchCore/StitchCore/Core/Internal/StitchAppClientImpl.swift; sourceTree = "<group>"; };
+		AF4712BA43798B885A0698A37EC5DB01 /* StitchCoreRemoteMongoDBService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StitchCoreRemoteMongoDBService-prefix.pch"; sourceTree = "<group>"; };
+		B0DE87F2D5CF83CA4F611B6574D1D6A4 /* AWSRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AWSRequest.swift; path = Core/Services/StitchCoreAWSService/Sources/StitchCoreAWSService/AWSRequest.swift; sourceTree = "<group>"; };
+		B2A9A559725EEB9CFE3767A90CBA383A /* StitchPushRoutes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchPushRoutes.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Push/Internal/StitchPushRoutes.swift; sourceTree = "<group>"; };
+		B2DD289F9D60E7EE9351B17E19AC6154 /* StitchCoreSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StitchCoreSDK.framework; path = StitchCoreSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B51FD888AA0C8E3A7723ECA642090F36 /* ThrowingServiceClientFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThrowingServiceClientFactory.swift; path = Darwin/StitchCore/StitchCore/Services/Internal/ThrowingServiceClientFactory.swift; sourceTree = "<group>"; };
+		B697FB40A0AC62908588EC2F1531C5BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6B3182A71BABD05443C43C6B4A07FE6 /* UserPasswordCredential.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserPasswordCredential.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/UserPassword/UserPasswordCredential.swift; sourceTree = "<group>"; };
+		B6E15D8F65211BCD7EB2172B082A67B0 /* RemoteDeleteResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteDeleteResult.swift; path = Core/Services/StitchCoreRemoteMongoDBService/Sources/StitchCoreRemoteMongoDBService/RemoteDeleteResult.swift; sourceTree = "<group>"; };
+		B753126056FAD3C99B5F80F3A8D46BEC /* AuthStateHolder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthStateHolder.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/AuthStateHolder.swift; sourceTree = "<group>"; };
+		B82CBAD383E3C3C621BDDA13AE4FE5DF /* StitchAuthDocRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchAuthDocRequest.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Internal/Net/Requests/StitchAuthDocRequest.swift; sourceTree = "<group>"; };
+		B903B42D4F80786C97ECC3B200996A5B /* CustomAuthProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomAuthProvider.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/Custom/CustomAuthProvider.swift; sourceTree = "<group>"; };
+		B983C6716D298E4FA5E2285A0F062F9F /* CoreStitchUser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreStitchUser.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/CoreStitchUser.swift; sourceTree = "<group>"; };
+		BB96E63AD01D65AE1E723EE1371EEFFE /* RemoteUpdateResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteUpdateResult.swift; path = Core/Services/StitchCoreRemoteMongoDBService/Sources/StitchCoreRemoteMongoDBService/RemoteUpdateResult.swift; sourceTree = "<group>"; };
+		BC51ECAF4F44F3BDE1E0D399ED77E700 /* libmongoc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libmongoc.framework; path = Frameworks/ios/libmongoc.framework; sourceTree = "<group>"; };
+		BDD5E13A322317026FEA34C9D649DFB4 /* StitchCoreRemoteMongoDBService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StitchCoreRemoteMongoDBService-umbrella.h"; sourceTree = "<group>"; };
+		BF7EF00398F82E78FA5B9F2A20736AAC /* AccessTokenRefresher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccessTokenRefresher.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/AccessTokenRefresher.swift; sourceTree = "<group>"; };
+		C00AE4A01786F96E689693C8DDDD7B0B /* Pods-mongostich-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mongostich-frameworks.sh"; sourceTree = "<group>"; };
+		C082423BFB6623BF0AFFC5387F10D6B1 /* StitchCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "StitchCore-dummy.m"; sourceTree = "<group>"; };
+		C2A0D678EBED9C0170386C277421519D /* CoreStitchServiceClientImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreStitchServiceClientImpl.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Services/Internal/CoreStitchServiceClientImpl.swift; sourceTree = "<group>"; };
+		C5F64AA14DE162D0CA8CE2F21F0CED8F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C764C57A58E3F79925B2EF9CB290C0E4 /* NamedAuthProviderClientFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NamedAuthProviderClientFactory.swift; path = Darwin/StitchCore/StitchCore/Core/Auth/Providers/NamedAuthProviderClientFactory.swift; sourceTree = "<group>"; };
+		C84D715E1CF7552DA17018157693BBDD /* Pods-mongostich-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mongostich-acknowledgements.plist"; sourceTree = "<group>"; };
+		C9574AE439B04C1842279777C77233D4 /* CoreStitchAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreStitchAuth.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/CoreStitchAuth.swift; sourceTree = "<group>"; };
+		C9FE1D17429C44158A74E37F8DEF49D1 /* Pods-mongostich.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mongostich.debug.xcconfig"; sourceTree = "<group>"; };
+		CA2DD745B8CBEA96C061E3B3D2E81F00 /* RemoteCountOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteCountOptions.swift; path = Core/Services/StitchCoreRemoteMongoDBService/Sources/StitchCoreRemoteMongoDBService/RemoteCountOptions.swift; sourceTree = "<group>"; };
+		CA3076FC89AF036484FD5D3BFBCD8F69 /* ServiceClientFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServiceClientFactory.swift; path = Darwin/StitchCore/StitchCore/Services/Internal/ServiceClientFactory.swift; sourceTree = "<group>"; };
+		CA8709CE435CD54F234B9B9282F5801A /* ServerAPIKeyAuthProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerAPIKeyAuthProvider.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/ServerAPIKey/ServerAPIKeyAuthProvider.swift; sourceTree = "<group>"; };
+		CAF8787AFF302580C8C6DBECCCF1099A /* Pods-mongostichUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-mongostichUITests.modulemap"; sourceTree = "<group>"; };
+		CD61B0C86B41EB9131DC0182B98B2A29 /* StitchServiceClientImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchServiceClientImpl.swift; path = Darwin/StitchCore/StitchCore/Services/Internal/StitchServiceClientImpl.swift; sourceTree = "<group>"; };
+		CDC1B1E818D121A9B615CB9811A0CE14 /* CoreStitchAppClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreStitchAppClient.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Internal/CoreStitchAppClient.swift; sourceTree = "<group>"; };
+		CE0FBBB29F111EB8917EDE9B18FAB2C3 /* StitchPushClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchPushClient.swift; path = Darwin/StitchCore/StitchCore/Core/Push/Internal/StitchPushClient.swift; sourceTree = "<group>"; };
+		D27F64E0A67322E5214F98CFB00A839D /* APIStitchUserIdentity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIStitchUserIdentity.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/Models/APIStitchUserIdentity.swift; sourceTree = "<group>"; };
+		D2A6534F455CCD9C4DF8D6728DA59E1D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2B1A2289F7CFD5C17DA2570342363C0 /* Pods-mongostich-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mongostich-resources.sh"; sourceTree = "<group>"; };
+		D35E7BA2D047A8E7AF4C7F1A76CCD464 /* Pods-mongostichTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-mongostichTests-umbrella.h"; sourceTree = "<group>"; };
+		D39415F2BFFBCAB900E51327489DF696 /* StitchCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StitchCore.xcconfig; sourceTree = "<group>"; };
+		D3E68CC95B1A65362AD4CEDCCA88F49B /* Pods-mongostichUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mongostichUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3F6D7C6E7E5D20F76CA6C07E15C2546 /* StitchAWSService.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = StitchAWSService.xcconfig; sourceTree = "<group>"; };
+		D42F40BFF0C79EDF10BDC04D8783379E /* ImmutableStitchAppClientConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmutableStitchAppClientConfiguration.swift; path = Darwin/StitchCore/StitchCore/Core/Internal/ImmutableStitchAppClientConfiguration.swift; sourceTree = "<group>"; };
+		D7323924247A354507A7A2A18E723B05 /* DeviceField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceField.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/DeviceField.swift; sourceTree = "<group>"; };
+		D96EC962742515014894166AFEF89E5A /* StitchAWSService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StitchAWSService.modulemap; sourceTree = "<group>"; };
+		DA2FFD21F00AA1B1CE2F450117468732 /* StitchAWSService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StitchAWSService-prefix.pch"; sourceTree = "<group>"; };
+		DAB6E4A2449E14CB55F7103FD9BBED6E /* StitchAppClientConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchAppClientConfiguration.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/StitchAppClientConfiguration.swift; sourceTree = "<group>"; };
+		DAE0898099D17B0B27157DF8839D7746 /* StitchServiceClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchServiceClient.swift; path = Darwin/StitchCore/StitchCore/Services/StitchServiceClient.swift; sourceTree = "<group>"; };
+		DB6F04EB5C87DB15BD5220C38668248A /* StitchCoreRemoteMongoDBService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = StitchCoreRemoteMongoDBService.modulemap; sourceTree = "<group>"; };
+		DC6AA477E8F297D48033D3BCFBDE45B2 /* RemoteInsertOneResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteInsertOneResult.swift; path = Core/Services/StitchCoreRemoteMongoDBService/Sources/StitchCoreRemoteMongoDBService/RemoteInsertOneResult.swift; sourceTree = "<group>"; };
+		DC738B4C61476488916B8B2912089ADA /* StitchRemoteMongoDBService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StitchRemoteMongoDBService-umbrella.h"; sourceTree = "<group>"; };
+		DCFE7BE6056A2DC17742F0C498854D93 /* Pods-mongostichTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mongostichTests-dummy.m"; sourceTree = "<group>"; };
+		DDB294C369138CFBF86F5AFEA569F787 /* APIAccessToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIAccessToken.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/Models/APIAccessToken.swift; sourceTree = "<group>"; };
+		DFCC464E0B63704BE97DEE0471A3FF07 /* CoreAWSServiceClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreAWSServiceClient.swift; path = Core/Services/StitchCoreAWSService/Sources/StitchCoreAWSService/Internal/CoreAWSServiceClient.swift; sourceTree = "<group>"; };
+		E094D8348C5DA8DFD921FD1E2EAC4A16 /* Pods-mongostichTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mongostichTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E0A05C9C9B69F76029C1B0B728E422CD /* StitchRequestClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchRequestClient.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Internal/Net/StitchRequestClient.swift; sourceTree = "<group>"; };
+		E14BB2F0B43F5918A82378273F54D235 /* CoreStitchUserImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreStitchUserImpl.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Internal/CoreStitchUserImpl.swift; sourceTree = "<group>"; };
+		E1D9D85E2F9CD54C68A8F59A1BE024FC /* UserAPIKeyAuthProviderClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserAPIKeyAuthProviderClient.swift; path = Darwin/StitchCore/StitchCore/Core/Auth/Providers/UserAPIKey/UserAPIKeyAuthProviderClient.swift; sourceTree = "<group>"; };
+		E21219CE2F7F0F4C5A5CEF7244CD78C3 /* Pods-mongostich.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-mongostich.modulemap"; sourceTree = "<group>"; };
+		E2BAA436A3172CB9C47984849F15D169 /* StitchCoreAWSService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = StitchCoreAWSService.framework; path = StitchCoreAWSService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5EAADC26542BC59FD8541A21BB58D8C /* NamedServiceClientFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NamedServiceClientFactory.swift; path = Darwin/StitchCore/StitchCore/Services/Internal/NamedServiceClientFactory.swift; sourceTree = "<group>"; };
+		E6986E72F3C2B67ED0D983BECD2B5AD8 /* StitchRemoteMongoDBServiceExports.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchRemoteMongoDBServiceExports.swift; path = Darwin/Services/StitchRemoteMongoDBService/StitchRemoteMongoDBService/StitchRemoteMongoDBServiceExports.swift; sourceTree = "<group>"; };
+		E857BA3FC150EF94E179413F2A0234D7 /* Pods-mongostichUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-mongostichUITests-umbrella.h"; sourceTree = "<group>"; };
+		EE4EFEBB819D809A1F71EB49A9C6F86E /* FacebookCredential.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacebookCredential.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/Facebook/FacebookCredential.swift; sourceTree = "<group>"; };
+		EE60FA9BD183C04E79A8D425DDC76D43 /* GoogleAuthProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GoogleAuthProvider.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/Google/GoogleAuthProvider.swift; sourceTree = "<group>"; };
+		EE673E3846F79FB45ABF0FA7F7B0F642 /* UserAPIKeyCredential.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserAPIKeyCredential.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/UserAPIKey/UserAPIKeyCredential.swift; sourceTree = "<group>"; };
+		EE67C49DF5C1D7DA541453049DC07D41 /* StitchDocRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchDocRequest.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Internal/Net/Requests/StitchDocRequest.swift; sourceTree = "<group>"; };
+		EFFC574801640EED38D0AE6F2D973AE4 /* ServerAPIKeyCredential.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerAPIKeyCredential.swift; path = Core/StitchCoreSDK/Sources/StitchCoreSDK/Auth/Providers/ServerAPIKey/ServerAPIKeyCredential.swift; sourceTree = "<group>"; };
+		F08A79E1DE56D7EF9317ACA2B9CB5D6F /* Pods-mongostichTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mongostichTests-resources.sh"; sourceTree = "<group>"; };
+		F4E749C8B6BDB5781BD92A479890B8FB /* StitchCoreAWSService-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StitchCoreAWSService-prefix.pch"; sourceTree = "<group>"; };
+		F69901F6A47A1AAC187DCD12D853F37D /* StitchCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "StitchCore-prefix.pch"; sourceTree = "<group>"; };
+		F7BB8AF6220DBBCE74E21EEBE46245E3 /* RemoteMongoClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteMongoClient.swift; path = Darwin/Services/StitchRemoteMongoDBService/StitchRemoteMongoDBService/RemoteMongoClient.swift; sourceTree = "<group>"; };
+		F7FD47167F9AFC7A4D06B331225EF84E /* RemoteMongoCursor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteMongoCursor.swift; path = Darwin/Services/StitchRemoteMongoDBService/StitchRemoteMongoDBService/RemoteMongoCursor.swift; sourceTree = "<group>"; };
+		F8F4B3A8789621F530422DEB2C63978E /* StitchAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StitchAuth.swift; path = Darwin/StitchCore/StitchCore/Core/Auth/StitchAuth.swift; sourceTree = "<group>"; };
+		F951FEDF38B418AE1D093C118D270377 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FC056BD7282E61F32046C19023D2954F /* StitchCoreAWSService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StitchCoreAWSService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD89D5F866A5F7F76D8CA79752493F79 /* StitchCoreRemoteMongoDBService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StitchCoreRemoteMongoDBService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD17E180C2EBFF3953A548F4DDC5384 /* CoreRemoteMongoDatabase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreRemoteMongoDatabase.swift; path = Core/Services/StitchCoreRemoteMongoDBService/Sources/StitchCoreRemoteMongoDBService/Internal/CoreRemoteMongoDatabase.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00145F0E52B0C44A8E9FC12586B99AA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B8118EBF2A1ED89EC739CE19A040CA7 /* Foundation.framework in Frameworks */,
+				E263C384FC624A6C060A1C59B2C51941 /* StitchCoreSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C209FF122901AA242C04DA762F9EC54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B67BE41B402C29C0295A40AC815C24A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F6F296147527C6B1F416041C4B95022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6620E132DCB0AD996CDDD9A6E5C8C0E7 /* Foundation.framework in Frameworks */,
+				085EF702CC6F497C46B33B38D7F3564B /* StitchCoreSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		422D3CA795662F2C9905AB810C6A28A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				794FAA4C5EE07A0EBEC4C25C571C5D9D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80EA11683CCE8A7075F8C8D57C42E830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F76E348C8392A1BE2968D26CF2F7D29 /* Foundation.framework in Frameworks */,
+				19F285F4C51E7E15FA5716E4B05A4843 /* StitchCore.framework in Frameworks */,
+				6610313659666B435431FE16902FD739 /* StitchCoreRemoteMongoDBService.framework in Frameworks */,
+				0A83803583EF35359386104F0677FEFB /* StitchCoreSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9444899B4BB356F8D62991BA5F75CCBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBEB459FF13896F3C13CE4AB0472C38 /* Foundation.framework in Frameworks */,
+				8536B0B7099E4572472CDA48470209D5 /* StitchCoreSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B1DBF72E87F2A98CAF22A2AA32D540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34E851F5FFF5E0BF7157FC033B2AD383 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E7C364233A7B13B26C98CE6558DF38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CE2ED5B2096D09B4EC874B9B6CE8CE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF5D19F3E026AF5180B34DA7690EF17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D24C8F40B83EA1E887A0CFB30CFEE53A /* Foundation.framework in Frameworks */,
+				8279ACAFE0350637E7416F459A8CD718 /* StitchCore.framework in Frameworks */,
+				809DE6D574B92B1C856F9B73BEEFE812 /* StitchCoreAWSService.framework in Frameworks */,
+				96F75F1D2C4004EF319346A506532B18 /* StitchCoreSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		025DE6EF72D0FDE463EC66C8242C52F2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2A6534F455CCD9C4DF8D6728DA59E1D /* Info.plist */,
+				D96EC962742515014894166AFEF89E5A /* StitchAWSService.modulemap */,
+				D3F6D7C6E7E5D20F76CA6C07E15C2546 /* StitchAWSService.xcconfig */,
+				67E0E3F5BAB61A0CBC1E6F87FB451268 /* StitchAWSService-dummy.m */,
+				DA2FFD21F00AA1B1CE2F450117468732 /* StitchAWSService-prefix.pch */,
+				419467D3AE506D06531870F6D1D77CE8 /* StitchAWSService-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/StitchAWSService";
+			sourceTree = "<group>";
+		};
+		04B31A33A02F42B944B54AA8C3D3F1A2 /* StitchSDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = StitchSDK;
+			path = StitchSDK;
+			sourceTree = "<group>";
+		};
+		0B054A4115F99CCB067DD1454D7042D9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				93199E36A151D845D40CD46738B902B3 /* Info.plist */,
+				755A65B6EA329960B45E683BE44FB05D /* StitchCore.modulemap */,
+				D39415F2BFFBCAB900E51327489DF696 /* StitchCore.xcconfig */,
+				C082423BFB6623BF0AFFC5387F10D6B1 /* StitchCore-dummy.m */,
+				F69901F6A47A1AAC187DCD12D853F37D /* StitchCore-prefix.pch */,
+				0069DD66F6F43505CE7F8CB09AA52F99 /* StitchCore-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/StitchCore";
+			sourceTree = "<group>";
+		};
+		111139EA747AE9426A57564E23290ACF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				221650E4E07100D9F4D4BC4D002C47DD /* Info.plist */,
+				4A468CF1C20A648F69C87A2EBB28CC1E /* StitchCoreSDK.modulemap */,
+				72BA08F8974BD54C9B654712B6A7278B /* StitchCoreSDK.xcconfig */,
+				03795CA7E41C9013171717B7DE773141 /* StitchCoreSDK-dummy.m */,
+				A9A903478B8C151C5522726242182498 /* StitchCoreSDK-prefix.pch */,
+				4B41D77BF0C5AF16042969D0645CFE2B /* StitchCoreSDK-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/StitchCoreSDK";
+			sourceTree = "<group>";
+		};
+		12B5DE48E5D0378E989DA94EBAC958D5 /* StitchCore */ = {
+			isa = PBXGroup;
+			children = (
+				04C6A90EC0E5546F1EB2BB0507CCFD64 /* AuthProviderClientFactory.swift */,
+				D42F40BFF0C79EDF10BDC04D8783379E /* ImmutableStitchAppClientConfiguration.swift */,
+				C764C57A58E3F79925B2EF9CB290C0E4 /* NamedAuthProviderClientFactory.swift */,
+				2B95C548EBE7B0E757FBE0B80EE40019 /* NamedPushClientFactory.swift */,
+				E5EAADC26542BC59FD8541A21BB58D8C /* NamedServiceClientFactory.swift */,
+				07038B8A3C4669A8BC00026AB6F92DE8 /* OperationDispatcher.swift */,
+				CA3076FC89AF036484FD5D3BFBCD8F69 /* ServiceClientFactory.swift */,
+				A0E6FCE239AA90E9FCA0C8456A00CB0C /* Stitch.swift */,
+				46019E21FC99B6E07C341047705748F3 /* StitchAppClient.swift */,
+				AD5E3DB9896B7413C451009BABC7A70D /* StitchAppClientImpl.swift */,
+				F8F4B3A8789621F530422DEB2C63978E /* StitchAuth.swift */,
+				893E2717BBCB46544CEE2201526B5CF2 /* StitchAuthDelegate.swift */,
+				4CF2449D8C64DCF7E434D9F07B679024 /* StitchAuthImpl.swift */,
+				17FE64D9966C901D0434889797983230 /* StitchCoreExports.swift */,
+				14C2084E30BDB45193C7FE4CD91A50D7 /* StitchPush.swift */,
+				CE0FBBB29F111EB8917EDE9B18FAB2C3 /* StitchPushClient.swift */,
+				192EB9094C7FB8225D5FD9F18FD775D0 /* StitchPushClientImpl.swift */,
+				7389B27BC23F264836E53C1F38EB33CA /* StitchPushImpl.swift */,
+				0307F6E6C0F22DE7B9539CB469370BC3 /* StitchResult.swift */,
+				DAE0898099D17B0B27157DF8839D7746 /* StitchServiceClient.swift */,
+				CD61B0C86B41EB9131DC0182B98B2A29 /* StitchServiceClientImpl.swift */,
+				7E2304F8221670F9D33109EE59035C47 /* StitchUser.swift */,
+				135075B987CF9A7BD2BB6642D031A1D3 /* StitchUserFactoryImpl.swift */,
+				3C9024A26458CD5729F0BB61C630CD6C /* StitchUserImpl.swift */,
+				B51FD888AA0C8E3A7723ECA642090F36 /* ThrowingServiceClientFactory.swift */,
+				E1D9D85E2F9CD54C68A8F59A1BE024FC /* UserAPIKeyAuthProviderClient.swift */,
+				82378687A3F466050422CE0597A04B12 /* UserPasswordAuthProviderClient.swift */,
+				0B054A4115F99CCB067DD1454D7042D9 /* Support Files */,
+			);
+			name = StitchCore;
+			path = StitchCore;
+			sourceTree = "<group>";
+		};
+		3C426DC6DA4A6F0C31E6E12E6D450678 /* StitchRemoteMongoDBService */ = {
+			isa = PBXGroup;
+			children = (
+				F7BB8AF6220DBBCE74E21EEBE46245E3 /* RemoteMongoClient.swift */,
+				406A751551FA8FE2ADE8264825180F86 /* RemoteMongoCollection.swift */,
+				F7FD47167F9AFC7A4D06B331225EF84E /* RemoteMongoCursor.swift */,
+				4D253124F48233C8B87AEA6BA28076AA /* RemoteMongoDatabase.swift */,
+				440811722CF04FDCD7E55F185EE42319 /* RemoteMongoReadOperation.swift */,
+				E6986E72F3C2B67ED0D983BECD2B5AD8 /* StitchRemoteMongoDBServiceExports.swift */,
+				A2D753FC1499C980E39D7FBB5B031E17 /* Support Files */,
+			);
+			name = StitchRemoteMongoDBService;
+			path = StitchRemoteMongoDBService;
+			sourceTree = "<group>";
+		};
+		434D28DFDA09549A9C8BF4267D24AD04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CD4D2F430679271ECA7326E5606D34A /* Pods_mongostich.framework */,
+				9BB5D5FF2DBA4F238D001C17D7A29774 /* Pods_mongostichTests.framework */,
+				65534152994FD2AD294ABA03ADC7301F /* Pods_mongostichUITests.framework */,
+				60BA5D2125EE32C05245E0AD491CF603 /* StitchAWSService.framework */,
+				7CF06C750113BE363AF85562F2BAB4A1 /* StitchCore.framework */,
+				E2BAA436A3172CB9C47984849F15D169 /* StitchCoreAWSService.framework */,
+				1D4DCCC6050ED7F1F44CDAF8E5BC8849 /* StitchCoreRemoteMongoDBService.framework */,
+				B2DD289F9D60E7EE9351B17E19AC6154 /* StitchCoreSDK.framework */,
+				72F24C4853211036CB34C78C85FC6753 /* StitchRemoteMongoDBService.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47DB61CC9123C221E190111200A8D8FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				734B9C7889EA3B33E1CC8898E9D8D867 /* StitchCore.framework */,
+				FC056BD7282E61F32046C19023D2954F /* StitchCoreAWSService.framework */,
+				FD89D5F866A5F7F76D8CA79752493F79 /* StitchCoreRemoteMongoDBService.framework */,
+				5B3738BE8EF82FCE897B3B74739E1D12 /* StitchCoreSDK.framework */,
+				B3C1569DAAA2C0072042BFE23BD616D8 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6043BDFDC6F86B9144B2420306B47100 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38B3144F8C10E2E80160635AD4E57D2A /* libbson.framework */,
+				BC51ECAF4F44F3BDE1E0D399ED77E700 /* libmongoc.framework */,
+				6C565FDFD8D627B45043692964EE248D /* MongoSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B0EBB80BF318291BD529984565C87CC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8857423D5D04E59D2D81755AD1CB7A9 /* Pods-mongostich */,
+				C649E0D22F8E41CE4DB8CF562FA27F5C /* Pods-mongostichTests */,
+				8F3858A5F818762114B9EB08BB6583D9 /* Pods-mongostichUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7C95CA8A807D4B057779BD6C699D5CA1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A843C9176353C6F7B1B0E8E0A6F48F8C /* Info.plist */,
+				DB6F04EB5C87DB15BD5220C38668248A /* StitchCoreRemoteMongoDBService.modulemap */,
+				0F15A42EA4F45C62F08B8EA0691201E8 /* StitchCoreRemoteMongoDBService.xcconfig */,
+				0E738F3B57A7AA967D4CB00FC1610F2E /* StitchCoreRemoteMongoDBService-dummy.m */,
+				AF4712BA43798B885A0698A37EC5DB01 /* StitchCoreRemoteMongoDBService-prefix.pch */,
+				BDD5E13A322317026FEA34C9D649DFB4 /* StitchCoreRemoteMongoDBService-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/StitchCoreRemoteMongoDBService";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				47DB61CC9123C221E190111200A8D8FC /* Frameworks */,
+				9151088FACF827E191191B7585214141 /* Pods */,
+				434D28DFDA09549A9C8BF4267D24AD04 /* Products */,
+				7B0EBB80BF318291BD529984565C87CC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8F3858A5F818762114B9EB08BB6583D9 /* Pods-mongostichUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B697FB40A0AC62908588EC2F1531C5BE /* Info.plist */,
+				CAF8787AFF302580C8C6DBECCCF1099A /* Pods-mongostichUITests.modulemap */,
+				98D53E1CB8AF0CE6B2CFF3170769B83B /* Pods-mongostichUITests-acknowledgements.markdown */,
+				7BE29A1ACE2DA00EC04BF362017F93A1 /* Pods-mongostichUITests-acknowledgements.plist */,
+				7E89E3BC36C97294B7B062094A59E27B /* Pods-mongostichUITests-dummy.m */,
+				2FBE8FCF44214072399712AB4CCA1462 /* Pods-mongostichUITests-frameworks.sh */,
+				423D6DEEBD8DC456308EC3D2FF29018E /* Pods-mongostichUITests-resources.sh */,
+				E857BA3FC150EF94E179413F2A0234D7 /* Pods-mongostichUITests-umbrella.h */,
+				D3E68CC95B1A65362AD4CEDCCA88F49B /* Pods-mongostichUITests.debug.xcconfig */,
+				43CF3071A951F544964F77B0446F56E3 /* Pods-mongostichUITests.release.xcconfig */,
+			);
+			name = "Pods-mongostichUITests";
+			path = "Target Support Files/Pods-mongostichUITests";
+			sourceTree = "<group>";
+		};
+		9151088FACF827E191191B7585214141 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2E410452A99A1F474A9A9925A30A546 /* StitchAWSService */,
+				12B5DE48E5D0378E989DA94EBAC958D5 /* StitchCore */,
+				9BA207B390940C099CC081658A4EA54A /* StitchCoreAWSService */,
+				9CF804E6E5F437C3153767918E8AD301 /* StitchCoreRemoteMongoDBService */,
+				EFC1B97205585DA8674BF8057192C8BE /* StitchCoreSDK */,
+				3C426DC6DA4A6F0C31E6E12E6D450678 /* StitchRemoteMongoDBService */,
+				04B31A33A02F42B944B54AA8C3D3F1A2 /* StitchSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9BA207B390940C099CC081658A4EA54A /* StitchCoreAWSService */ = {
+			isa = PBXGroup;
+			children = (
+				B0DE87F2D5CF83CA4F611B6574D1D6A4 /* AWSRequest.swift */,
+				DFCC464E0B63704BE97DEE0471A3FF07 /* CoreAWSServiceClient.swift */,
+				A9493374479D76FFA7060E047E4E7D15 /* Support Files */,
+			);
+			name = StitchCoreAWSService;
+			path = StitchCoreAWSService;
+			sourceTree = "<group>";
+		};
+		9CF804E6E5F437C3153767918E8AD301 /* StitchCoreRemoteMongoDBService */ = {
+			isa = PBXGroup;
+			children = (
+				58FE28AE953BC92F79730AFA1C26854F /* CoreRemoteMongoClient.swift */,
+				5B64D9798576867F91552B30267009CA /* CoreRemoteMongoCollection.swift */,
+				A8DC2C72F8246D05676F3FF749B02C9E /* CoreRemoteMongoCursor.swift */,
+				FFD17E180C2EBFF3953A548F4DDC5384 /* CoreRemoteMongoDatabase.swift */,
+				256FDEFDD429E5C61D0BF25716C68F47 /* CoreRemoteMongoReadOperation.swift */,
+				CA2DD745B8CBEA96C061E3B3D2E81F00 /* RemoteCountOptions.swift */,
+				B6E15D8F65211BCD7EB2172B082A67B0 /* RemoteDeleteResult.swift */,
+				987CFB6C270E593F2006253B7D22DD32 /* RemoteFindOptions.swift */,
+				08CF21730E21202A6BF3F7E0034B48B7 /* RemoteInsertManyResult.swift */,
+				DC6AA477E8F297D48033D3BCFBDE45B2 /* RemoteInsertOneResult.swift */,
+				2997A8A95C15DCCFAEB1388FE582B0C4 /* RemoteUpdateOptions.swift */,
+				BB96E63AD01D65AE1E723EE1371EEFFE /* RemoteUpdateResult.swift */,
+				7C95CA8A807D4B057779BD6C699D5CA1 /* Support Files */,
+			);
+			name = StitchCoreRemoteMongoDBService;
+			path = StitchCoreRemoteMongoDBService;
+			sourceTree = "<group>";
+		};
+		A2D753FC1499C980E39D7FBB5B031E17 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AF504569A1E1DFD3D21EE2106E4223A /* Info.plist */,
+				1A79280A866EA3491E684EBB7438181A /* StitchRemoteMongoDBService.modulemap */,
+				6C458975B261B9A97BC8695BE293686C /* StitchRemoteMongoDBService.xcconfig */,
+				2E0AB1AD64B0ACA6F593AD541F5CAFD8 /* StitchRemoteMongoDBService-dummy.m */,
+				0217BE86A41C749F5A4E407C1A5C0ADD /* StitchRemoteMongoDBService-prefix.pch */,
+				DC738B4C61476488916B8B2912089ADA /* StitchRemoteMongoDBService-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/StitchRemoteMongoDBService";
+			sourceTree = "<group>";
+		};
+		A9493374479D76FFA7060E047E4E7D15 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E9A3062B3F0544DDEC57FD0B6CCAE1E /* Info.plist */,
+				4972EEEB1307B2051265531620484461 /* StitchCoreAWSService.modulemap */,
+				A651DF2851D1BC297F60A92A98111C10 /* StitchCoreAWSService.xcconfig */,
+				06F09324862FE948ADC3A29D06C02753 /* StitchCoreAWSService-dummy.m */,
+				F4E749C8B6BDB5781BD92A479890B8FB /* StitchCoreAWSService-prefix.pch */,
+				033AC995332858739F2B25990127819F /* StitchCoreAWSService-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/StitchCoreAWSService";
+			sourceTree = "<group>";
+		};
+		B2E410452A99A1F474A9A9925A30A546 /* StitchAWSService */ = {
+			isa = PBXGroup;
+			children = (
+				4D15F8805377BB66F1696CA5E971D84D /* AWSServiceClient.swift */,
+				95F5EEA1FDAFBC60B26DC5A05C51F763 /* AWSServiceClientImpl.swift */,
+				8038A2A065D4E9C9200EA760892352A0 /* StitchAWSServiceExports.swift */,
+				025DE6EF72D0FDE463EC66C8242C52F2 /* Support Files */,
+			);
+			name = StitchAWSService;
+			path = StitchAWSService;
+			sourceTree = "<group>";
+		};
+		B3C1569DAAA2C0072042BFE23BD616D8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F951FEDF38B418AE1D093C118D270377 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C649E0D22F8E41CE4DB8CF562FA27F5C /* Pods-mongostichTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D8B6C783F26DE651046F354A3661F72 /* Info.plist */,
+				402A7580158556FAD2DA6724F9390C07 /* Pods-mongostichTests.modulemap */,
+				13DFE1059B4B1C44E6F161F25F68FECA /* Pods-mongostichTests-acknowledgements.markdown */,
+				E094D8348C5DA8DFD921FD1E2EAC4A16 /* Pods-mongostichTests-acknowledgements.plist */,
+				DCFE7BE6056A2DC17742F0C498854D93 /* Pods-mongostichTests-dummy.m */,
+				9E8CAB744AACB7AF6DD58AFD330A898C /* Pods-mongostichTests-frameworks.sh */,
+				F08A79E1DE56D7EF9317ACA2B9CB5D6F /* Pods-mongostichTests-resources.sh */,
+				D35E7BA2D047A8E7AF4C7F1A76CCD464 /* Pods-mongostichTests-umbrella.h */,
+				7E4AABD73D81CA78708EBE39CA442E93 /* Pods-mongostichTests.debug.xcconfig */,
+				1C33BD4AD1E30D0E0E164B6423D3BBDE /* Pods-mongostichTests.release.xcconfig */,
+			);
+			name = "Pods-mongostichTests";
+			path = "Target Support Files/Pods-mongostichTests";
+			sourceTree = "<group>";
+		};
+		D8857423D5D04E59D2D81755AD1CB7A9 /* Pods-mongostich */ = {
+			isa = PBXGroup;
+			children = (
+				C5F64AA14DE162D0CA8CE2F21F0CED8F /* Info.plist */,
+				E21219CE2F7F0F4C5A5CEF7244CD78C3 /* Pods-mongostich.modulemap */,
+				3F731C1F34DBCF639A81E501DF971BBB /* Pods-mongostich-acknowledgements.markdown */,
+				C84D715E1CF7552DA17018157693BBDD /* Pods-mongostich-acknowledgements.plist */,
+				8E48E89EB1BC9EEDB516070463B2FAFA /* Pods-mongostich-dummy.m */,
+				C00AE4A01786F96E689693C8DDDD7B0B /* Pods-mongostich-frameworks.sh */,
+				D2B1A2289F7CFD5C17DA2570342363C0 /* Pods-mongostich-resources.sh */,
+				34B7E3D226C14F52697864E3936A206D /* Pods-mongostich-umbrella.h */,
+				C9FE1D17429C44158A74E37F8DEF49D1 /* Pods-mongostich.debug.xcconfig */,
+				59575A56ECB7848833450A7FAAF01111 /* Pods-mongostich.release.xcconfig */,
+			);
+			name = "Pods-mongostich";
+			path = "Target Support Files/Pods-mongostich";
+			sourceTree = "<group>";
+		};
+		EFC1B97205585DA8674BF8057192C8BE /* StitchCoreSDK */ = {
+			isa = PBXGroup;
+			children = (
+				BF7EF00398F82E78FA5B9F2A20736AAC /* AccessTokenRefresher.swift */,
+				5E501EC58434FBC680AE69B4A038A5C1 /* AnonymousAuthProvider.swift */,
+				9BB3C5E457BB88728DDB4FB024B52553 /* AnonymousCredential.swift */,
+				DDB294C369138CFBF86F5AFEA569F787 /* APIAccessToken.swift */,
+				0E010C5CC909AB78B0CA1039B91DC46F /* APIAuthInfoImpl.swift */,
+				48A7AF1891E23B197D47F4D267D43658 /* APICoreUserProfile.swift */,
+				D27F64E0A67322E5214F98CFB00A839D /* APIStitchUserIdentity.swift */,
+				15C4D6423DE7B40A52D56695F9E5EE06 /* AuthInfo.swift */,
+				B753126056FAD3C99B5F80F3A8D46BEC /* AuthStateHolder.swift */,
+				A1CC1D14FDEDC8160DAF93CE996593E5 /* ContentType.swift */,
+				179E9EADC1AF2447546BA2632ED6A129 /* CoreAuthProviderClient.swift */,
+				CDC1B1E818D121A9B615CB9811A0CE14 /* CoreStitchAppClient.swift */,
+				C9574AE439B04C1842279777C77233D4 /* CoreStitchAuth.swift */,
+				94F793FB9B1EECF98320033FA87DF475 /* CoreStitchAuth+StitchAuthRequestClient.swift */,
+				36C5FEE5C626131DB4DEB79327236266 /* CoreStitchPushClient.swift */,
+				9FFABF1AC9E0FCF7953624BA30AFBF5A /* CoreStitchPushClientImpl.swift */,
+				09EAC137F9A9534ECC1B97F9E36553D1 /* CoreStitchServiceClient.swift */,
+				C2A0D678EBED9C0170386C277421519D /* CoreStitchServiceClientImpl.swift */,
+				B983C6716D298E4FA5E2285A0F062F9F /* CoreStitchUser.swift */,
+				E14BB2F0B43F5918A82378273F54D235 /* CoreStitchUserImpl.swift */,
+				0193875718A0AC7EB5EC926BFA2E0A3A /* CoreUserAPIKeyAuthProviderClient.swift */,
+				1BBDC1885EF7C84652E9642071340A04 /* CoreUserPasswordAuthProviderClient.swift */,
+				B903B42D4F80786C97ECC3B200996A5B /* CustomAuthProvider.swift */,
+				90D2A93DA7CAD113E33E0FD1670853D2 /* CustomCredential.swift */,
+				D7323924247A354507A7A2A18E723B05 /* DeviceField.swift */,
+				29E740D8D5444DCAE100AB1BB375B414 /* FacebookAuthProvider.swift */,
+				EE4EFEBB819D809A1F71EB49A9C6F86E /* FacebookCredential.swift */,
+				A6386FD08658F9EA6F8226233D575E75 /* FoundationHTTPTransport.swift */,
+				EE60FA9BD183C04E79A8D425DDC76D43 /* GoogleAuthProvider.swift */,
+				6021CCF54990720207EC30BE238A4BA6 /* GoogleCredential.swift */,
+				31DCC20835AD89F1A2433B0B6566B5E6 /* Headers.swift */,
+				0A0D6EAFA3C99540FE8616752F3F0C7C /* ImplFailureFatalErrors.swift */,
+				9C154AB4903021BCFE679D349158EA6F /* JWT.swift */,
+				5A8FBBF6CB4FA57E379E6863960547FD /* Method.swift */,
+				3C6E453E87E6C1ED2E2A1F1A49837159 /* ProviderCapabilities.swift */,
+				2E68DEBEE08AD5675815C3ECE7C444B7 /* Request.swift */,
+				CA8709CE435CD54F234B9B9282F5801A /* ServerAPIKeyAuthProvider.swift */,
+				EFFC574801640EED38D0AE6F2D973AE4 /* ServerAPIKeyCredential.swift */,
+				DAB6E4A2449E14CB55F7103FD9BBED6E /* StitchAppClientConfiguration.swift */,
+				0FCF667D41F0198F688DE567DD76989A /* StitchAppClientInfo.swift */,
+				61C28816844287F4863FEDE6FA9A1051 /* StitchAppRoutes.swift */,
+				B82CBAD383E3C3C621BDDA13AE4FE5DF /* StitchAuthDocRequest.swift */,
+				A68B74B1C6F879A4B1B32DA52B3C6147 /* StitchAuthRequest.swift */,
+				3D23C664E73F8948EA6C87C7768C8EBF /* StitchAuthRequestClient.swift */,
+				479757BB455FF44F177F5BF8726B08C3 /* StitchClientConfiguration.swift */,
+				ABE854D83FCC81609C339B66F8C1370A /* StitchCredential.swift */,
+				EE67C49DF5C1D7DA541453049DC07D41 /* StitchDocRequest.swift */,
+				7E15D6325CB27ECC99317B538201D54B /* StitchError.swift */,
+				87FD0DF469C72FBC6A4C38E367FAFC42 /* StitchProviderType.swift */,
+				B2A9A559725EEB9CFE3767A90CBA383A /* StitchPushRoutes.swift */,
+				4B52162689EE0961AA9DDE9C07ADC6B0 /* StitchRequest.swift */,
+				E0A05C9C9B69F76029C1B0B728E422CD /* StitchRequestClient.swift */,
+				0CDC9038567E651587C1C7FB7DB543AF /* StitchUserFactory.swift */,
+				4CAF519672AF6879704A92D763698223 /* StitchUserIdentity.swift */,
+				1707314CD337A0D5FCED91AC4C9B22C8 /* StitchUserProfile.swift */,
+				23368C4F0ADC29F920410E00F5C6461E /* Storage.swift */,
+				8972FF428AB0401B14089D0DA67F3C80 /* StoreAuthInfo.swift */,
+				71F463C4372A4020F293E142076D2B1B /* StoreCoreUserProfile.swift */,
+				A62EF753269280721AC50E5F32FD3D4E /* StoreStitchUserIdentity.swift */,
+				019B0A9E787B270DB24448E489335E8F /* Transport.swift */,
+				24E7FD6B3995486E1D07DF955EB306ED /* UserAPIKey.swift */,
+				1C6DB1DE32024CBBEB3695957B9FEE4E /* UserAPIKeyAuthProvider.swift */,
+				EE673E3846F79FB45ABF0FA7F7B0F642 /* UserAPIKeyCredential.swift */,
+				4F332F1DE7F380193D19C782FD55A6A4 /* UserPasswordAuthProvider.swift */,
+				B6B3182A71BABD05443C43C6B4A07FE6 /* UserPasswordCredential.swift */,
+				6043BDFDC6F86B9144B2420306B47100 /* Frameworks */,
+				111139EA747AE9426A57564E23290ACF /* Support Files */,
+			);
+			name = StitchCoreSDK;
+			path = StitchCoreSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		15BCCA0801841ACD1094A064BA8B47F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29BAC05B6AAC1822DC0932B3BD960156 /* StitchCoreAWSService-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		484479767F259077899C1AB48ADB160C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B148BAD0F8602AB58BE753D756FCBBD2 /* StitchCoreSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B6F0D1B7ED50071369DA33793E519D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3404EF37AD9461C2C06391F343DA5964 /* Pods-mongostich-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5492D57521B56EE5542FF9E9DFEAE5A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629492C8071DD9B49F8778EBE55E166C /* StitchCore-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D61CA51517C78C43F73710D6FB302D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB1A8B4BC1A45CB5CA78F48714DCA50 /* Pods-mongostichUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E9E2BC1B82406C43E5D43E58E170DD4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CDA2CC0B87913BA2106CBCD47C38A8D /* Pods-mongostichTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0287E9C1EA40529DCCEC831EB0C10A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECF83790791EBE333DE99133BD44F94 /* StitchAWSService-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B842898C482855D7359E670C3C292BAF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C035C5EB8C74C0276D2FFB9E2263FBB1 /* StitchCoreRemoteMongoDBService-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9AC0BFB98219E51C566F08924E9C4B2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D205215F541A32A50807B2541C1F7D29 /* StitchRemoteMongoDBService-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		08E0A4521BBA5808755D2965FB0BB662 /* StitchRemoteMongoDBService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF1FFD749D9FF891B8157107D46FB766 /* Build configuration list for PBXNativeTarget "StitchRemoteMongoDBService" */;
+			buildPhases = (
+				3DAC09A0DC2FD73BBB2E4F933F9B2122 /* Sources */,
+				80EA11683CCE8A7075F8C8D57C42E830 /* Frameworks */,
+				B9AC0BFB98219E51C566F08924E9C4B2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FA034CA72484AC9F0A7EF0DAB6972E0 /* PBXTargetDependency */,
+				D4CD4F97012B679A86703CF376C1FCEB /* PBXTargetDependency */,
+				20650CFF4F07AA2D5363D532C32F3A1F /* PBXTargetDependency */,
+			);
+			name = StitchRemoteMongoDBService;
+			productName = StitchRemoteMongoDBService;
+			productReference = 72F24C4853211036CB34C78C85FC6753 /* StitchRemoteMongoDBService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		14B134218935AF37A1975D03DF555B49 /* StitchCoreRemoteMongoDBService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C89980FE6F08D7EF68D3F6774CA94DFC /* Build configuration list for PBXNativeTarget "StitchCoreRemoteMongoDBService" */;
+			buildPhases = (
+				FF4BED5B0C928312E75C6013AAE76CC7 /* Sources */,
+				9444899B4BB356F8D62991BA5F75CCBB /* Frameworks */,
+				B842898C482855D7359E670C3C292BAF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A2AB803454D117C7FC266F2592172DF /* PBXTargetDependency */,
+			);
+			name = StitchCoreRemoteMongoDBService;
+			productName = StitchCoreRemoteMongoDBService;
+			productReference = 1D4DCCC6050ED7F1F44CDAF8E5BC8849 /* StitchCoreRemoteMongoDBService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		318A60D73CC969E28F3AF0BEA1B4EE3A /* StitchAWSService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99A6535AC25BC9BCB506C7E99F0ADF7 /* Build configuration list for PBXNativeTarget "StitchAWSService" */;
+			buildPhases = (
+				FDF9B9AB6E743F8C72A9E766E90DAA35 /* Sources */,
+				FCF5D19F3E026AF5180B34DA7690EF17 /* Frameworks */,
+				B0287E9C1EA40529DCCEC831EB0C10A0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B85B385FAF5B68E1898A48AD511FCA27 /* PBXTargetDependency */,
+				FA470460946630CE0D2A003887AB7E66 /* PBXTargetDependency */,
+				CCC23E070696EBF54A0C73E94C5A30B5 /* PBXTargetDependency */,
+			);
+			name = StitchAWSService;
+			productName = StitchAWSService;
+			productReference = 60BA5D2125EE32C05245E0AD491CF603 /* StitchAWSService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6B92303FD691F889B2C8F0ADA36AD3F5 /* StitchCoreSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94C4242DCE1A475594F8B0EF288C9B48 /* Build configuration list for PBXNativeTarget "StitchCoreSDK" */;
+			buildPhases = (
+				575FE8D21A05C6ABC5F4978D7BCD576F /* Sources */,
+				1C209FF122901AA242C04DA762F9EC54 /* Frameworks */,
+				484479767F259077899C1AB48ADB160C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StitchCoreSDK;
+			productName = StitchCoreSDK;
+			productReference = B2DD289F9D60E7EE9351B17E19AC6154 /* StitchCoreSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		71B67E121D44CCFD74E2DECEEF9FD8B0 /* Pods-mongostichTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5325DFBF6C59A1546AAC962130D266E3 /* Build configuration list for PBXNativeTarget "Pods-mongostichTests" */;
+			buildPhases = (
+				E5914E5F15D5442B2E44B1EEB90B5007 /* Sources */,
+				E0E7C364233A7B13B26C98CE6558DF38 /* Frameworks */,
+				9E9E2BC1B82406C43E5D43E58E170DD4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87B3C26941D14D2299C80E8964FF01F6 /* PBXTargetDependency */,
+			);
+			name = "Pods-mongostichTests";
+			productName = "Pods-mongostichTests";
+			productReference = 9BB5D5FF2DBA4F238D001C17D7A29774 /* Pods_mongostichTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		72F6443C53D0FF21AB6BA0AB76C900BB /* StitchCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89CF5A747EFCDF38C54B7EB6F655F3DD /* Build configuration list for PBXNativeTarget "StitchCore" */;
+			buildPhases = (
+				48EEC4A8CA272FF29EC163F2B8C19D2F /* Sources */,
+				2F6F296147527C6B1F416041C4B95022 /* Frameworks */,
+				5492D57521B56EE5542FF9E9DFEAE5A1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43F4F501437F736826AC414807306365 /* PBXTargetDependency */,
+			);
+			name = StitchCore;
+			productName = StitchCore;
+			productReference = 7CF06C750113BE363AF85562F2BAB4A1 /* StitchCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		79E660F277510CAF91E685168470300D /* StitchCoreAWSService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99D2D6AD16CC3D18B6ED84622D336BC /* Build configuration list for PBXNativeTarget "StitchCoreAWSService" */;
+			buildPhases = (
+				E862DF5A75B2C6F2063D2A6BA4B8C18B /* Sources */,
+				00145F0E52B0C44A8E9FC12586B99AA7 /* Frameworks */,
+				15BCCA0801841ACD1094A064BA8B47F6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74BF6F500F3911B6A935E8C8C9A19BDF /* PBXTargetDependency */,
+			);
+			name = StitchCoreAWSService;
+			productName = StitchCoreAWSService;
+			productReference = E2BAA436A3172CB9C47984849F15D169 /* StitchCoreAWSService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		97B2C2329E9018562B7B525E3E56EC91 /* Pods-mongostichUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11A797C46081B9C126F36FB6DF7116DB /* Build configuration list for PBXNativeTarget "Pods-mongostichUITests" */;
+			buildPhases = (
+				5D1DC3EE4C7CD4EADA0BEC7012406D12 /* Sources */,
+				422D3CA795662F2C9905AB810C6A28A8 /* Frameworks */,
+				5D61CA51517C78C43F73710D6FB302D1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA254D66DA4F1C6F19EB469A92BFD217 /* PBXTargetDependency */,
+			);
+			name = "Pods-mongostichUITests";
+			productName = "Pods-mongostichUITests";
+			productReference = 65534152994FD2AD294ABA03ADC7301F /* Pods_mongostichUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C87DA930BF7C75736FD7DB16A391A70B /* Pods-mongostich */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 532C999761E7529FF57B5E55725111E8 /* Build configuration list for PBXNativeTarget "Pods-mongostich" */;
+			buildPhases = (
+				FBD104C1E089C029C6ED535281F0A03F /* Sources */,
+				A7B1DBF72E87F2A98CAF22A2AA32D540 /* Frameworks */,
+				4B6F0D1B7ED50071369DA33793E519D0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2074F74F4C8F84130EEF0699121EAC1C /* PBXTargetDependency */,
+				AE4D9CF930ED356A8374AE05C31F52F6 /* PBXTargetDependency */,
+				3E298DE3A7F2943D35E977F34C2E3589 /* PBXTargetDependency */,
+				47DA0D45CF40BF9C6488D8EB3DF5AF25 /* PBXTargetDependency */,
+				C1198F4B139F8AF5FBB149AA0214DE8D /* PBXTargetDependency */,
+				5DA5C13D4FB5585483EAAA8465566826 /* PBXTargetDependency */,
+			);
+			name = "Pods-mongostich";
+			productName = "Pods-mongostich";
+			productReference = 6CD4D2F430679271ECA7326E5606D34A /* Pods_mongostich.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 434D28DFDA09549A9C8BF4267D24AD04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C87DA930BF7C75736FD7DB16A391A70B /* Pods-mongostich */,
+				71B67E121D44CCFD74E2DECEEF9FD8B0 /* Pods-mongostichTests */,
+				97B2C2329E9018562B7B525E3E56EC91 /* Pods-mongostichUITests */,
+				318A60D73CC969E28F3AF0BEA1B4EE3A /* StitchAWSService */,
+				72F6443C53D0FF21AB6BA0AB76C900BB /* StitchCore */,
+				79E660F277510CAF91E685168470300D /* StitchCoreAWSService */,
+				14B134218935AF37A1975D03DF555B49 /* StitchCoreRemoteMongoDBService */,
+				6B92303FD691F889B2C8F0ADA36AD3F5 /* StitchCoreSDK */,
+				08E0A4521BBA5808755D2965FB0BB662 /* StitchRemoteMongoDBService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DAC09A0DC2FD73BBB2E4F933F9B2122 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45ABF01C11CE95A51D30B77DA0EC1ED8 /* RemoteMongoClient.swift in Sources */,
+				78D194C58C29FC038782FB83A38C5E61 /* RemoteMongoCollection.swift in Sources */,
+				D9FE36FB91EF563D16BE17FF1D1DBF6A /* RemoteMongoCursor.swift in Sources */,
+				E0AE3313C625EB292DA4D76D22CD4961 /* RemoteMongoDatabase.swift in Sources */,
+				0A9D52B4A3B4882F79FCEA5EF0E1B09D /* RemoteMongoReadOperation.swift in Sources */,
+				78469D480E05598BAF6330F55DE271DA /* StitchRemoteMongoDBService-dummy.m in Sources */,
+				A4311FC26EA8002DC271D5C911078C51 /* StitchRemoteMongoDBServiceExports.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48EEC4A8CA272FF29EC163F2B8C19D2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72EDD18FBCDA5C38998DB447638BD804 /* AuthProviderClientFactory.swift in Sources */,
+				57888D274EF5CB008EBCA368AFB69F60 /* ImmutableStitchAppClientConfiguration.swift in Sources */,
+				9744E93361854F0C2EBBEDDF5D363000 /* NamedAuthProviderClientFactory.swift in Sources */,
+				B1C18F82E35882F30D6162BB3AEEB951 /* NamedPushClientFactory.swift in Sources */,
+				EA65D53AC7F3161C3BF59EE0A2FA0EDF /* NamedServiceClientFactory.swift in Sources */,
+				BDB08874A136C9FD1E249B1FA9647ED5 /* OperationDispatcher.swift in Sources */,
+				C562088EEF8F418D044E7CCAD9E1C4F6 /* ServiceClientFactory.swift in Sources */,
+				8F21718BB5590AF0CE093660BB34B117 /* Stitch.swift in Sources */,
+				87B7C5A7B64C42B7CAC96BBC8C23E8E8 /* StitchAppClient.swift in Sources */,
+				3C513F654AC98971BA53171B5930D495 /* StitchAppClientImpl.swift in Sources */,
+				9434820718764DC362A2F1F01F0BF91C /* StitchAuth.swift in Sources */,
+				6495F6BF00E5DAB6B1500FA64B957D7F /* StitchAuthDelegate.swift in Sources */,
+				BC9E9867CC9E2C727BFA0CE00F04EBB1 /* StitchAuthImpl.swift in Sources */,
+				61FC244A7EC78A4CFD1C96BF487AFEB5 /* StitchCore-dummy.m in Sources */,
+				AEF3EB2544A4EEE6FCE589D0816F3482 /* StitchCoreExports.swift in Sources */,
+				881E2D84E277D44BF9CF99530C3FA401 /* StitchPush.swift in Sources */,
+				02130AD0DA2056C4902749F28538F70B /* StitchPushClient.swift in Sources */,
+				7A25F106AF709741C14AF02A552259F6 /* StitchPushClientImpl.swift in Sources */,
+				C9642D22FFDB834044EB027BFF245C66 /* StitchPushImpl.swift in Sources */,
+				21A6512CFD8AF1493A779936ECCF83A9 /* StitchResult.swift in Sources */,
+				3494474A7EC7DB877BBC33C7DC8480D9 /* StitchServiceClient.swift in Sources */,
+				6A85C44595B624F56E0DA48EDA5BC832 /* StitchServiceClientImpl.swift in Sources */,
+				C0787AE6998806E6A975E1C4D5B0C196 /* StitchUser.swift in Sources */,
+				70AE12A734C1853C430B135D8DE40C7C /* StitchUserFactoryImpl.swift in Sources */,
+				8B69F3057BE4ACC6D40B937779949DE6 /* StitchUserImpl.swift in Sources */,
+				5070E900357F14A32046EE33322B6674 /* ThrowingServiceClientFactory.swift in Sources */,
+				E9591A05573F7D0DB499016A273F5DF3 /* UserAPIKeyAuthProviderClient.swift in Sources */,
+				3A3D23E39C0E91D070D603AFE76FE23F /* UserPasswordAuthProviderClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		575FE8D21A05C6ABC5F4978D7BCD576F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E2E2E91B6C33481C3F00EEC70A8B398 /* AccessTokenRefresher.swift in Sources */,
+				76248D6F9B0BF88058CF85F202D70860 /* AnonymousAuthProvider.swift in Sources */,
+				078261D33AB03EE64F8D1D8979C55942 /* AnonymousCredential.swift in Sources */,
+				D5E38F3F04B4E11A4A907E6B78C7DFC8 /* APIAccessToken.swift in Sources */,
+				552D93FF8AE6736F8E4E6C5A9811830A /* APIAuthInfoImpl.swift in Sources */,
+				151C8831AB558BCA7A1FC88657633F21 /* APICoreUserProfile.swift in Sources */,
+				EA0C1F39F4B7AE685CCD4335451589BB /* APIStitchUserIdentity.swift in Sources */,
+				046E50B2AE8A6A92365B6F0F6CE25E73 /* AuthInfo.swift in Sources */,
+				8B49DE6977B4FFB2A5ED5741B4F3D4E8 /* AuthStateHolder.swift in Sources */,
+				5642A74ADA5E1C7F47B4DFDFD388B2B0 /* ContentType.swift in Sources */,
+				4508322EC4632F1EA66BB9FC078429C7 /* CoreAuthProviderClient.swift in Sources */,
+				12F8774D0938B67D1ADEE619B4EC86D6 /* CoreStitchAppClient.swift in Sources */,
+				2815360134FA195EC17829227C889355 /* CoreStitchAuth+StitchAuthRequestClient.swift in Sources */,
+				49F1068B19814B3B6CFE4DC7B06A8CAD /* CoreStitchAuth.swift in Sources */,
+				E3D780506EAF521E6177667615B44A7E /* CoreStitchPushClient.swift in Sources */,
+				41D82731EDB85095106FABE0918B85E4 /* CoreStitchPushClientImpl.swift in Sources */,
+				0C74C0AE273B9E77BD489A1CE9FD14A2 /* CoreStitchServiceClient.swift in Sources */,
+				7D0A4F7973333FE806ECA8CF8283A292 /* CoreStitchServiceClientImpl.swift in Sources */,
+				408B5FD736EE633604ED53B466E77399 /* CoreStitchUser.swift in Sources */,
+				C1D6D2209BC2F344AE4E856640706DD1 /* CoreStitchUserImpl.swift in Sources */,
+				05916608B162D51895E2C9CD9179FCF2 /* CoreUserAPIKeyAuthProviderClient.swift in Sources */,
+				0A616AC10C10DC5E62C4E9D088EBC485 /* CoreUserPasswordAuthProviderClient.swift in Sources */,
+				15DF8D024B1EB2347CCC464DCDEBB200 /* CustomAuthProvider.swift in Sources */,
+				9226CC0A2EBBF7FC333A7AE84F92A056 /* CustomCredential.swift in Sources */,
+				6F24444A8E4697140DB47F4A9D5BBD41 /* DeviceField.swift in Sources */,
+				D4A8467ECBDF5DBE3618CBDEF12D7589 /* FacebookAuthProvider.swift in Sources */,
+				85F3CCABAE8C83703E6D2A67C14973C2 /* FacebookCredential.swift in Sources */,
+				5C106D4E16C55F279F9E4D69EB82A3A8 /* FoundationHTTPTransport.swift in Sources */,
+				5FD94C8A4EB11544CCCA92EDB7B8B845 /* GoogleAuthProvider.swift in Sources */,
+				BAF786BAEDABD298131E1D70C8ED9E6B /* GoogleCredential.swift in Sources */,
+				E41AC0D6C2EB4013668143E35460A29C /* Headers.swift in Sources */,
+				DA809F59000241F7762197146E7DD752 /* ImplFailureFatalErrors.swift in Sources */,
+				E863E69FCF18232362ACDC6A1D144CCD /* JWT.swift in Sources */,
+				8BC31FC18A5E26CF80DEB1532DD407D3 /* Method.swift in Sources */,
+				DC6C1DBAF5DE107231EFCEE2E0BAB1CD /* ProviderCapabilities.swift in Sources */,
+				4B3FE8F90F352C78119C256B0BAB050F /* Request.swift in Sources */,
+				7FF33F1ED6DD3CF3F0D34CCF76C796DC /* ServerAPIKeyAuthProvider.swift in Sources */,
+				D7C1C19E6829A89BC7F15126434AA911 /* ServerAPIKeyCredential.swift in Sources */,
+				65896F7FA3A3430D129B0D5EA6F54D4F /* StitchAppClientConfiguration.swift in Sources */,
+				00B32D74230D870480E76277CBB24CDF /* StitchAppClientInfo.swift in Sources */,
+				90393B86BEFD0E7B48D4AB6B6E6844F7 /* StitchAppRoutes.swift in Sources */,
+				1366C8D09BACBA6D48530182AA09EB3D /* StitchAuthDocRequest.swift in Sources */,
+				0F9A4B6C1641BE9DED6AD98949C596A7 /* StitchAuthRequest.swift in Sources */,
+				32940C4FA485801F226E2DAB93C33512 /* StitchAuthRequestClient.swift in Sources */,
+				482F885B4E1FB24A20DB79503DB5A0B6 /* StitchClientConfiguration.swift in Sources */,
+				38ACBA2EEF88F5B77C1F792778A46EC5 /* StitchCoreSDK-dummy.m in Sources */,
+				3C6F3980CB5531135BCCBB48DD1E9469 /* StitchCredential.swift in Sources */,
+				623A66F22B5101B0C2D258EC91CF9CCF /* StitchDocRequest.swift in Sources */,
+				A2E093B81A325459600433E472AC1784 /* StitchError.swift in Sources */,
+				BE044842A64CAB9A35AB1A7FBE8A8047 /* StitchProviderType.swift in Sources */,
+				7B7CDA945865D77B635CEDCCB5AC3A0C /* StitchPushRoutes.swift in Sources */,
+				5E6793DA442B372CC0872FE17C6E9D8D /* StitchRequest.swift in Sources */,
+				53EE4882B7C696C895A9C165625E9CEB /* StitchRequestClient.swift in Sources */,
+				C686A46791A8978153A286EFA375EBFD /* StitchUserFactory.swift in Sources */,
+				C5650FFC16958F01EE0FFA5A6BEA057A /* StitchUserIdentity.swift in Sources */,
+				47F20880EF7DF28B155771C0408A4BA5 /* StitchUserProfile.swift in Sources */,
+				21E512290FBBEC548C7B97A565042EFE /* Storage.swift in Sources */,
+				0F5A1CD76F73C2AB5C21CBD1AF6307C3 /* StoreAuthInfo.swift in Sources */,
+				19A9F84463C6053A22F6FC3B692BDD5C /* StoreCoreUserProfile.swift in Sources */,
+				AB6335501400DF20857FB4AF4036B2C6 /* StoreStitchUserIdentity.swift in Sources */,
+				B2DFC9D55933C96709051CC6F1C477B0 /* Transport.swift in Sources */,
+				03B9D76822E8BECC7F0EF286E7F9103D /* UserAPIKey.swift in Sources */,
+				E4B9FC7BCCF4FB30F528DFC2C3D6812A /* UserAPIKeyAuthProvider.swift in Sources */,
+				030F9F8831716F2538A4748AB76B2EC5 /* UserAPIKeyCredential.swift in Sources */,
+				D9A5961E69AFDB475BDF21D4A3023A1A /* UserPasswordAuthProvider.swift in Sources */,
+				1F853DFC58AFF1E994CD6FBCEBEBCF41 /* UserPasswordCredential.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D1DC3EE4C7CD4EADA0BEC7012406D12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25A0D73C05A3B0969FBE0C1ACD0802EA /* Pods-mongostichUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5914E5F15D5442B2E44B1EEB90B5007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43770FE013E0F1544796F9AE2B49758D /* Pods-mongostichTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E862DF5A75B2C6F2063D2A6BA4B8C18B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C116B11121B6DC87CAB012877B0B51A5 /* AWSRequest.swift in Sources */,
+				9EB6A870DD1004D9D9EDD9040E8DC164 /* CoreAWSServiceClient.swift in Sources */,
+				BB32BE20AAA67D0AB60EF36AB7AC6419 /* StitchCoreAWSService-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD104C1E089C029C6ED535281F0A03F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4187710BCF36FC8F16485E0137A36CF7 /* Pods-mongostich-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF9B9AB6E743F8C72A9E766E90DAA35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DA02A4F3D461D2F3D7576F8C79AB09D /* AWSServiceClient.swift in Sources */,
+				9EF7ECC5AE252C0D77005211F05BE0FA /* AWSServiceClientImpl.swift in Sources */,
+				D8EB6661CE3AF6AED8D0AC426616F6B9 /* StitchAWSService-dummy.m in Sources */,
+				77D64E355DBC22CCA2F68475540C8DFC /* StitchAWSServiceExports.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4BED5B0C928312E75C6013AAE76CC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4966E0199B45A9C89D67A6EAE032FA /* CoreRemoteMongoClient.swift in Sources */,
+				F8DAE2D2760BE87D34059206E4C1361A /* CoreRemoteMongoCollection.swift in Sources */,
+				6ADD2495C03CD83F7DAD502A902A1E00 /* CoreRemoteMongoCursor.swift in Sources */,
+				1C2588D269B9A47A35B1DAA8DAF4368C /* CoreRemoteMongoDatabase.swift in Sources */,
+				F5014456B418613301567C38342DDFD4 /* CoreRemoteMongoReadOperation.swift in Sources */,
+				4E03BF75CAF743606E04E7A1A70F726A /* RemoteCountOptions.swift in Sources */,
+				079DB95901E4E75C8327E8CA2BA5E4F6 /* RemoteDeleteResult.swift in Sources */,
+				FABB143A9764C5C9EF3262D28D91939F /* RemoteFindOptions.swift in Sources */,
+				8F9CB785D0F0201311D052FB1693BFF0 /* RemoteInsertManyResult.swift in Sources */,
+				CCB43CA4B43092B229CC58E5160B643E /* RemoteInsertOneResult.swift in Sources */,
+				AFF364121F9184A49854AE410250AA15 /* RemoteUpdateOptions.swift in Sources */,
+				875A767604BB37543058A009DF2704DC /* RemoteUpdateResult.swift in Sources */,
+				82D2A4FD668DA8DF8AA508FC0797AC24 /* StitchCoreRemoteMongoDBService-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20650CFF4F07AA2D5363D532C32F3A1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StitchCoreSDK;
+			target = 6B92303FD691F889B2C8F0ADA36AD3F5 /* StitchCoreSDK */;
+			targetProxy = BDAA9FAC6ECC7A83575A33ECF2759B92 /* PBXContainerItemProxy */;
+		};
+		2074F74F4C8F84130EEF0699121EAC1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StitchAWSService;
+			target = 318A60D73CC969E28F3AF0BEA1B4EE3A /* StitchAWSService */;
+			targetProxy = 85B4EF1BD1C329963A2369A41914C479 /* PBXContainerItemProxy */;
+		};
+		3A2AB803454D117C7FC266F2592172DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StitchCoreSDK;
+			target = 6B92303FD691F889B2C8F0ADA36AD3F5 /* StitchCoreSDK */;
+			targetProxy = F95B250C8D5C8668E93488B8996E56FE /* PBXContainerItemProxy */;
+		};
+		3E298DE3A7F2943D35E977F34C2E3589 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StitchCoreAWSService;
+			target = 79E660F277510CAF91E685168470300D /* StitchCoreAWSService */;
+			targetProxy = 734FCA5EFE6D578F91E1ED5C1F6B4206 /* PBXContainerItemProxy */;
+		};
+		43F4F501437F736826AC414807306365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StitchCoreSDK;
+			target = 6B92303FD691F889B2C8F0ADA36AD3F5 /* StitchCoreSDK */;
+			targetProxy = 4A60733FB273ED260403121CB2EF1713 /* PBXContainerItemProxy */;
+		};
+		47DA0D45CF40BF9C6488D8EB3DF5AF25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StitchCoreRemoteMongoDBService;
+			target = 14B134218935AF37A1975D03DF555B49 /* StitchCoreRemoteMongoDBService */;
+			targetProxy = F12F76771B9E22D70FCB8611659544BD /* PBXContainerItemProxy */;
+		};
+		5DA5C13D4FB5585483EAAA8465566826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StitchRemoteMongoDBService;
+			target = 08E0A4521BBA5808755D2965FB0BB662 /* StitchRemoteMongoDBService */;
+			targetProxy = 9724E0462429D2C8B2524A2D8BD38419 /* PBXContainerItemProxy */;
+		};
+		74BF6F500F3911B6A935E8C8C9A19BDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StitchCoreSDK;
+			target = 6B92303FD691F889B2C8F0ADA36AD3F5 /* StitchCoreSDK */;
+			targetProxy = ABB8C6B46FB7C5919389C792BEB20651 /* PBXContainerItemProxy */;
+		};
+		87B3C26941D14D2299C80E8964FF01F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-mongostich";
+			target = C87DA930BF7C75736FD7DB16A391A70B /* Pods-mongostich */;
+			targetProxy = 2D24994E4F0D9DCE270C16525D69A95E /* PBXContainerItemProxy */;
+		};
+		9FA034CA72484AC9F0A7EF0DAB6972E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StitchCore;
+			target = 72F6443C53D0FF21AB6BA0AB76C900BB /* StitchCore */;
+			targetProxy = 7439314AFBED6BD837ABF15A0A45F22C /* PBXContainerItemProxy */;
+		};
+		AE4D9CF930ED356A8374AE05C31F52F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StitchCore;
+			target = 72F6443C53D0FF21AB6BA0AB76C900BB /* StitchCore */;
+			targetProxy = F32AF746AF592D66A2ECA020E31FB09C /* PBXContainerItemProxy */;
+		};
+		B85B385FAF5B68E1898A48AD511FCA27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StitchCore;
+			target = 72F6443C53D0FF21AB6BA0AB76C900BB /* StitchCore */;
+			targetProxy = 6498FC293C0C50450E76865944B160F5 /* PBXContainerItemProxy */;
+		};
+		C1198F4B139F8AF5FBB149AA0214DE8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StitchCoreSDK;
+			target = 6B92303FD691F889B2C8F0ADA36AD3F5 /* StitchCoreSDK */;
+			targetProxy = 8B026B88916C8B3B936D24392BEE8B7C /* PBXContainerItemProxy */;
+		};
+		CCC23E070696EBF54A0C73E94C5A30B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StitchCoreSDK;
+			target = 6B92303FD691F889B2C8F0ADA36AD3F5 /* StitchCoreSDK */;
+			targetProxy = 9AB362A9F75665C24F847DA19599A0F1 /* PBXContainerItemProxy */;
+		};
+		D4CD4F97012B679A86703CF376C1FCEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StitchCoreRemoteMongoDBService;
+			target = 14B134218935AF37A1975D03DF555B49 /* StitchCoreRemoteMongoDBService */;
+			targetProxy = 31195A5D6A2CA1D1CBB1479627BF9920 /* PBXContainerItemProxy */;
+		};
+		FA254D66DA4F1C6F19EB469A92BFD217 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-mongostich";
+			target = C87DA930BF7C75736FD7DB16A391A70B /* Pods-mongostich */;
+			targetProxy = A82DAD0A1A948BD25DFE37F832248B13 /* PBXContainerItemProxy */;
+		};
+		FA470460946630CE0D2A003887AB7E66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StitchCoreAWSService;
+			target = 79E660F277510CAF91E685168470300D /* StitchCoreAWSService */;
+			targetProxy = A7065986EC35DE32AA9E36A45FF313D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		113E4EA7EFD3BEA0FE3367956BD7D876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43CF3071A951F544964F77B0446F56E3 /* Pods-mongostichUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-mongostichUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-mongostichUITests/Pods-mongostichUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		23BDCCFDF552E7D770274DD3B6775A49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D39415F2BFFBCAB900E51327489DF696 /* StitchCore.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StitchCore/StitchCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StitchCore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/StitchCore/StitchCore.modulemap";
+				PRODUCT_MODULE_NAME = StitchCore;
+				PRODUCT_NAME = StitchCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3A3FB79C50E7A9FD7CF60D5934C40519 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F15A42EA4F45C62F08B8EA0691201E8 /* StitchCoreRemoteMongoDBService.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StitchCoreRemoteMongoDBService/StitchCoreRemoteMongoDBService-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StitchCoreRemoteMongoDBService/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/StitchCoreRemoteMongoDBService/StitchCoreRemoteMongoDBService.modulemap";
+				PRODUCT_MODULE_NAME = StitchCoreRemoteMongoDBService;
+				PRODUCT_NAME = StitchCoreRemoteMongoDBService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		442C141B02F4743505F20E75AABF1BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C458975B261B9A97BC8695BE293686C /* StitchRemoteMongoDBService.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StitchRemoteMongoDBService/StitchRemoteMongoDBService-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StitchRemoteMongoDBService/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/StitchRemoteMongoDBService/StitchRemoteMongoDBService.modulemap";
+				PRODUCT_MODULE_NAME = StitchRemoteMongoDBService;
+				PRODUCT_NAME = StitchRemoteMongoDBService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E93382C6675E802585B4A09DAFA877C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F15A42EA4F45C62F08B8EA0691201E8 /* StitchCoreRemoteMongoDBService.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StitchCoreRemoteMongoDBService/StitchCoreRemoteMongoDBService-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StitchCoreRemoteMongoDBService/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/StitchCoreRemoteMongoDBService/StitchCoreRemoteMongoDBService.modulemap";
+				PRODUCT_MODULE_NAME = StitchCoreRemoteMongoDBService;
+				PRODUCT_NAME = StitchCoreRemoteMongoDBService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		50F0CFF447E0F08E1B9A7750ED93FD19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A651DF2851D1BC297F60A92A98111C10 /* StitchCoreAWSService.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StitchCoreAWSService/StitchCoreAWSService-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StitchCoreAWSService/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/StitchCoreAWSService/StitchCoreAWSService.modulemap";
+				PRODUCT_MODULE_NAME = StitchCoreAWSService;
+				PRODUCT_NAME = StitchCoreAWSService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7241929B50121A9207BAF1B96FDF9C16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3F6D7C6E7E5D20F76CA6C07E15C2546 /* StitchAWSService.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StitchAWSService/StitchAWSService-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StitchAWSService/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/StitchAWSService/StitchAWSService.modulemap";
+				PRODUCT_MODULE_NAME = StitchAWSService;
+				PRODUCT_NAME = StitchAWSService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7889AA6441693223D2339EF350CE75A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D39415F2BFFBCAB900E51327489DF696 /* StitchCore.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StitchCore/StitchCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StitchCore/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/StitchCore/StitchCore.modulemap";
+				PRODUCT_MODULE_NAME = StitchCore;
+				PRODUCT_NAME = StitchCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7BBD46F46B62E76ECCDBFFCDAEC8C7E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9FE1D17429C44158A74E37F8DEF49D1 /* Pods-mongostich.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-mongostich/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-mongostich/Pods-mongostich.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D1BEFD1E9657005EA9FC42CC8BBF771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C33BD4AD1E30D0E0E164B6423D3BBDE /* Pods-mongostichTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-mongostichTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-mongostichTests/Pods-mongostichTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9EC9E5F15C8ABB33F7B45BDF04AC39FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A651DF2851D1BC297F60A92A98111C10 /* StitchCoreAWSService.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StitchCoreAWSService/StitchCoreAWSService-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StitchCoreAWSService/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/StitchCoreAWSService/StitchCoreAWSService.modulemap";
+				PRODUCT_MODULE_NAME = StitchCoreAWSService;
+				PRODUCT_NAME = StitchCoreAWSService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A7E26C1E6057FA91494435FFE728FD0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3E68CC95B1A65362AD4CEDCCA88F49B /* Pods-mongostichUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-mongostichUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-mongostichUITests/Pods-mongostichUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B5A0C5AEFB8C59F6053A7A86CF2D4A06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3F6D7C6E7E5D20F76CA6C07E15C2546 /* StitchAWSService.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StitchAWSService/StitchAWSService-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StitchAWSService/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/StitchAWSService/StitchAWSService.modulemap";
+				PRODUCT_MODULE_NAME = StitchAWSService;
+				PRODUCT_NAME = StitchAWSService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C10D65ABE147D56AB54929D89D92D174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72BA08F8974BD54C9B654712B6A7278B /* StitchCoreSDK.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StitchCoreSDK/StitchCoreSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StitchCoreSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/StitchCoreSDK/StitchCoreSDK.modulemap";
+				PRODUCT_MODULE_NAME = StitchCoreSDK;
+				PRODUCT_NAME = StitchCoreSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C2940D6612E6CF3B481427FBF15134E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C458975B261B9A97BC8695BE293686C /* StitchRemoteMongoDBService.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StitchRemoteMongoDBService/StitchRemoteMongoDBService-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StitchRemoteMongoDBService/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/StitchRemoteMongoDBService/StitchRemoteMongoDBService.modulemap";
+				PRODUCT_MODULE_NAME = StitchRemoteMongoDBService;
+				PRODUCT_NAME = StitchRemoteMongoDBService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CCA993F99245F698EBF4CED68A15646B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E4AABD73D81CA78708EBE39CA442E93 /* Pods-mongostichTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-mongostichTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-mongostichTests/Pods-mongostichTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E5B6F812AE5FA1D66C1A628D512F5444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72BA08F8974BD54C9B654712B6A7278B /* StitchCoreSDK.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/StitchCoreSDK/StitchCoreSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/StitchCoreSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/StitchCoreSDK/StitchCoreSDK.modulemap";
+				PRODUCT_MODULE_NAME = StitchCoreSDK;
+				PRODUCT_NAME = StitchCoreSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EFEB07633B24731EE93AE44E7FC66A3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59575A56ECB7848833450A7FAAF01111 /* Pods-mongostich.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-mongostich/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-mongostich/Pods-mongostich.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11A797C46081B9C126F36FB6DF7116DB /* Build configuration list for PBXNativeTarget "Pods-mongostichUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7E26C1E6057FA91494435FFE728FD0E /* Debug */,
+				113E4EA7EFD3BEA0FE3367956BD7D876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
+				08638A96A528B1EC32DE62F8A728389D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5325DFBF6C59A1546AAC962130D266E3 /* Build configuration list for PBXNativeTarget "Pods-mongostichTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCA993F99245F698EBF4CED68A15646B /* Debug */,
+				7D1BEFD1E9657005EA9FC42CC8BBF771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		532C999761E7529FF57B5E55725111E8 /* Build configuration list for PBXNativeTarget "Pods-mongostich" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BBD46F46B62E76ECCDBFFCDAEC8C7E2 /* Debug */,
+				EFEB07633B24731EE93AE44E7FC66A3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89CF5A747EFCDF38C54B7EB6F655F3DD /* Build configuration list for PBXNativeTarget "StitchCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23BDCCFDF552E7D770274DD3B6775A49 /* Debug */,
+				7889AA6441693223D2339EF350CE75A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94C4242DCE1A475594F8B0EF288C9B48 /* Build configuration list for PBXNativeTarget "StitchCoreSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5B6F812AE5FA1D66C1A628D512F5444 /* Debug */,
+				C10D65ABE147D56AB54929D89D92D174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF1FFD749D9FF891B8157107D46FB766 /* Build configuration list for PBXNativeTarget "StitchRemoteMongoDBService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442C141B02F4743505F20E75AABF1BD4 /* Debug */,
+				C2940D6612E6CF3B481427FBF15134E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C89980FE6F08D7EF68D3F6774CA94DFC /* Build configuration list for PBXNativeTarget "StitchCoreRemoteMongoDBService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3FB79C50E7A9FD7CF60D5934C40519 /* Debug */,
+				4E93382C6675E802585B4A09DAFA877C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E99A6535AC25BC9BCB506C7E99F0ADF7 /* Build configuration list for PBXNativeTarget "StitchAWSService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A0C5AEFB8C59F6053A7A86CF2D4A06 /* Debug */,
+				7241929B50121A9207BAF1B96FDF9C16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E99D2D6AD16CC3D18B6ED84622D336BC /* Build configuration list for PBXNativeTarget "StitchCoreAWSService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EC9E5F15C8ABB33F7B45BDF04AC39FD /* Debug */,
+				50F0CFF447E0F08E1B9A7750ED93FD19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module StitchCoreAWSService {
+  umbrella header "StitchCoreAWSService-umbrella.h"
+
+  export *
+  module * { export * }
+}
